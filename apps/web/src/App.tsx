@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./lib/api";
 import { AuthProvider, useAuth } from "./contexts/AuthContext";
 import { WorldProvider, useWorld } from "./contexts/WorldContext";
 import { WorldLayout } from "./components/layout/WorldLayout";

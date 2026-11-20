@@ -3,33 +3,50 @@ import { Header } from "./Header";
 import { Sidebar } from "./Sidebar";
 import { useWorld } from "../../contexts/WorldContext";
 import { WORLDS } from "@platform/config";
-import { SocialFeed } from "../../features/socializing/SocialFeed";
-import { PeopleDiscovery } from "../../features/socializing/PeopleDiscovery";
-import { SocialStories } from "../../features/socializing/SocialStories";
-import { SocialReels } from "../../features/socializing/SocialReels";
-import { SocialCommunities } from "../../features/socializing/SocialCommunities";
-import { SocialEvents } from "../../features/socializing/SocialEvents";
-import { SocialInbox } from "../../features/socializing/SocialInbox";
-import { SocialNotifications } from "../../features/socializing/SocialNotifications";
-import { SocialProfileView } from "../../features/socializing/SocialProfileView";
-import { SocialExplore } from "../../features/socializing/SocialExplore";
-import { FoundersDashboard } from "../../features/founders/FoundersDashboard";
-import { FoundersInbox } from "../../features/founders/FoundersInbox";
-import { FoundersNotifications } from "../../features/founders/FoundersNotifications";
-import { FoundersProfileView } from "../../features/founders/FoundersProfileView";
-import { LinkedInFeedView } from "../../features/founders/LinkedInFeedView";
-import { FounderNetworkView } from "../../features/founders/FounderNetworkView";
-import { OpportunitiesMarketplaceView } from "../../features/founders/OpportunitiesMarketplaceView";
-import { HiringCentreView } from "../../features/founders/HiringCentreView";
-import { StartupHubView } from "../../features/founders/StartupHubView";
-import { ProductLaunchpadView } from "../../features/founders/ProductLaunchpadView";
-import { StartupCollaborationView } from "../../features/founders/StartupCollaborationView";
-import { ReferralExchangeView } from "../../features/founders/ReferralExchangeView";
-import { MentorNetworkView } from "../../features/founders/MentorNetworkView";
-import { InvestorNetworkView } from "../../features/founders/InvestorNetworkView";
-import { BuildSpacesView } from "../../features/founders/BuildSpacesView";
-import { VerificationCentreView } from "../../features/founders/VerificationCentreView";
-import { PremiumCentreView } from "../../features/founders/PremiumCentreView";
+
+// Lazy-loaded Socializing views for bundle code-splitting
+const SocialFeed = React.lazy(() => import("../../features/socializing/SocialFeed").then((m) => ({ default: m.SocialFeed })));
+const PeopleDiscovery = React.lazy(() => import("../../features/socializing/PeopleDiscovery").then((m) => ({ default: m.PeopleDiscovery })));
+const SocialStories = React.lazy(() => import("../../features/socializing/SocialStories").then((m) => ({ default: m.SocialStories })));
+const SocialReels = React.lazy(() => import("../../features/socializing/SocialReels").then((m) => ({ default: m.SocialReels })));
+const SocialCommunities = React.lazy(() => import("../../features/socializing/SocialCommunities").then((m) => ({ default: m.SocialCommunities })));
+const SocialEvents = React.lazy(() => import("../../features/socializing/SocialEvents").then((m) => ({ default: m.SocialEvents })));
+const SocialInbox = React.lazy(() => import("../../features/socializing/SocialInbox").then((m) => ({ default: m.SocialInbox })));
+const SocialNotifications = React.lazy(() => import("../../features/socializing/SocialNotifications").then((m) => ({ default: m.SocialNotifications })));
+const SocialProfileView = React.lazy(() => import("../../features/socializing/SocialProfileView").then((m) => ({ default: m.SocialProfileView })));
+const SocialExplore = React.lazy(() => import("../../features/socializing/SocialExplore").then((m) => ({ default: m.SocialExplore })));
+
+// Lazy-loaded Founders views for bundle code-splitting
+const FoundersDashboard = React.lazy(() => import("../../features/founders/FoundersDashboard").then((m) => ({ default: m.FoundersDashboard })));
+const FoundersInbox = React.lazy(() => import("../../features/founders/FoundersInbox").then((m) => ({ default: m.FoundersInbox })));
+const FoundersNotifications = React.lazy(() => import("../../features/founders/FoundersNotifications").then((m) => ({ default: m.FoundersNotifications })));
+const FoundersProfileView = React.lazy(() => import("../../features/founders/FoundersProfileView").then((m) => ({ default: m.FoundersProfileView })));
+const LinkedInFeedView = React.lazy(() => import("../../features/founders/LinkedInFeedView").then((m) => ({ default: m.LinkedInFeedView })));
+const FounderNetworkView = React.lazy(() => import("../../features/founders/FounderNetworkView").then((m) => ({ default: m.FounderNetworkView })));
+const OpportunitiesMarketplaceView = React.lazy(() => import("../../features/founders/OpportunitiesMarketplaceView").then((m) => ({ default: m.OpportunitiesMarketplaceView })));
+const HiringCentreView = React.lazy(() => import("../../features/founders/HiringCentreView").then((m) => ({ default: m.HiringCentreView })));
+const StartupHubView = React.lazy(() => import("../../features/founders/StartupHubView").then((m) => ({ default: m.StartupHubView })));
+const ProductLaunchpadView = React.lazy(() => import("../../features/founders/ProductLaunchpadView").then((m) => ({ default: m.ProductLaunchpadView })));
+const StartupCollaborationView = React.lazy(() => import("../../features/founders/StartupCollaborationView").then((m) => ({ default: m.StartupCollaborationView })));
+const ReferralExchangeView = React.lazy(() => import("../../features/founders/ReferralExchangeView").then((m) => ({ default: m.ReferralExchangeView })));
+const MentorNetworkView = React.lazy(() => import("../../features/founders/MentorNetworkView").then((m) => ({ default: m.MentorNetworkView })));
+const InvestorNetworkView = React.lazy(() => import("../../features/founders/InvestorNetworkView").then((m) => ({ default: m.InvestorNetworkView })));
+const BuildSpacesView = React.lazy(() => import("../../features/founders/BuildSpacesView").then((m) => ({ default: m.BuildSpacesView })));
+const VerificationCentreView = React.lazy(() => import("../../features/founders/VerificationCentreView").then((m) => ({ default: m.VerificationCentreView })));
+const PremiumCentreView = React.lazy(() => import("../../features/founders/PremiumCentreView").then((m) => ({ default: m.PremiumCentreView })));
+
+const ViewLoadingFallback: React.FC<{ isSocial: boolean }> = ({ isSocial }) => (
+  <div className="flex items-center justify-center h-64 animate-in fade-in duration-150">
+    <div className="flex flex-col items-center gap-3">
+      <div
+        className={`w-7 h-7 border-2 border-t-transparent rounded-full animate-spin ${
+          isSocial ? "border-violet-500" : "border-emerald-500"
+        }`}
+      />
+      <span className="text-xs text-slate-400 font-medium">Loading view...</span>
+    </div>
+  </div>
+);
 import { CreateMediaModal } from "../../features/socializing/CreateMediaModal";
 import { CommandPaletteModal } from "../CommandPaletteModal";
 import { IntelligenceControlModal } from "../IntelligenceControlModal";
@@ -226,10 +243,10 @@ export const WorldLayout: React.FC<WorldLayoutProps> = ({ onNavigateToLanding })
                 </span>
               </div>
             </div>
-          ) : isSocial ? (
-            renderSocialContent()
           ) : (
-            renderFoundersContent()
+            <React.Suspense fallback={<ViewLoadingFallback isSocial={isSocial} />}>
+              {isSocial ? renderSocialContent() : renderFoundersContent()}
+            </React.Suspense>
           )}
         </main>
       </div>

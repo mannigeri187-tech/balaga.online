@@ -33,12 +33,6 @@ export default defineConfig({
           if (id.includes("node_modules/@supabase") || id.includes("node_modules\\@supabase")) {
             return "vendor-supabase";
           }
-          if (id.includes("features/founders") || id.includes("features\\founders")) {
-            return "realm-founders";
-          }
-          if (id.includes("features/socializing") || id.includes("features\\socializing")) {
-            return "realm-socializing";
-          }
         },
       },
     },
