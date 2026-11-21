@@ -1,16 +1,19 @@
 import React, { useEffect, useState, useRef } from "react";
 
+/**
+ * Butterflow-Style Non-Intrusive Precision Custom Cursor
+ * Subtle pinpoint + fluid trailing ring.
+ * Strictly pointer-events-none so it never intercepts clicks or obscures text.
+ */
 export const CustomCursor: React.FC = () => {
   const cursorDotRef = useRef<HTMLDivElement | null>(null);
   const cursorRingRef = useRef<HTMLDivElement | null>(null);
-  const [cursorText, setCursorText] = useState<string>("");
-  const [isHovered, setIsHovered] = useState<boolean>(false);
   const [isPointer, setIsPointer] = useState<boolean>(false);
   const [isVisible, setIsVisible] = useState<boolean>(false);
 
   useEffect(() => {
     // Disable on touch devices
-    if (window.matchMedia("(pointer: coarse)").matches) {
+    if (typeof window === "undefined" || window.matchMedia("(pointer: coarse)").matches) {
       return;
     }
 
@@ -25,25 +28,10 @@ export const CustomCursor: React.FC = () => {
       mouseY = e.clientY;
       if (!isVisible) setIsVisible(true);
 
-      // Check what element is being hovered
       const target = e.target as HTMLElement | null;
       if (target) {
-        const interactiveEl = target.closest("button, a, input, [data-cursor]");
-        if (interactiveEl) {
-          setIsPointer(true);
-          const customText = interactiveEl.getAttribute("data-cursor");
-          if (customText) {
-            setCursorText(customText);
-            setIsHovered(true);
-          } else {
-            setCursorText("");
-            setIsHovered(false);
-          }
-        } else {
-          setIsPointer(false);
-          setCursorText("");
-          setIsHovered(false);
-        }
+        const interactiveEl = target.closest("button, a, input, select, textarea, [role='button']");
+        setIsPointer(Boolean(interactiveEl));
       }
     };
 
@@ -51,14 +39,13 @@ export const CustomCursor: React.FC = () => {
       setIsVisible(false);
     };
 
-    window.addEventListener("mousemove", onMouseMove);
+    window.addEventListener("mousemove", onMouseMove, { passive: true });
     document.addEventListener("mouseleave", onMouseLeave);
 
     // Smooth lerp loop for the trailing ring
     const renderLoop = () => {
-      // Lerp ring towards mouse position (0.18 factor for snappy silky fluidity)
-      ringX += (mouseX - ringX) * 0.18;
-      ringY += (mouseY - ringY) * 0.18;
+      ringX += (mouseX - ringX) * 0.2;
+      ringY += (mouseY - ringY) * 0.2;
 
       if (cursorDotRef.current) {
         cursorDotRef.current.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
@@ -84,36 +71,30 @@ export const CustomCursor: React.FC = () => {
 
   return (
     <>
-      {/* Central pinpoint dot */}
+      {/* Central amber pinpoint dot */}
       <div
         ref={cursorDotRef}
-        className="fixed top-0 left-0 -ml-1 -mt-1 w-2 h-2 rounded-full bg-amber-400 pointer-events-none z-[9999] transition-opacity duration-150"
+        className="fixed top-0 left-0 -ml-1 -mt-1 w-2 h-2 rounded-full bg-amber-400 pointer-events-none select-none z-[9999] transition-opacity duration-150 shadow-sm shadow-amber-400/50"
         style={{
-          opacity: isHovered ? 0 : 0.9,
+          opacity: 0.9,
           willChange: "transform",
         }}
+        aria-hidden="true"
       />
 
-      {/* Outer fluid trailing ring with Butterflow glow */}
+      {/* Outer fluid trailing ring - minimalist and non-blocking */}
       <div
         ref={cursorRingRef}
-        className={`fixed top-0 left-0 pointer-events-none z-[9998] rounded-full flex items-center justify-center font-mono text-[9px] font-bold uppercase tracking-widest text-[#07080a] transition-[width,height,background-color,border-color] duration-200 ease-out ${
-          isHovered
-            ? "-ml-9 -mt-9 w-18 h-18 bg-gradient-to-tr from-amber-400 to-amber-200 text-[#07080a] shadow-xl shadow-amber-400/30 scale-100 backdrop-blur-md"
-            : isPointer
-            ? "-ml-5 -mt-5 w-10 h-10 border border-amber-400/70 bg-amber-400/10 scale-110"
-            : "-ml-3.5 -mt-3.5 w-7 h-7 border border-white/30 bg-white/5"
+        className={`fixed top-0 left-0 pointer-events-none select-none z-[9998] rounded-full transition-[width,height,margin,border-color,background-color] duration-200 ease-out ${
+          isPointer
+            ? "-ml-5 -mt-5 w-10 h-10 border border-amber-400/70 bg-amber-400/10 scale-105"
+            : "-ml-3.5 -mt-3.5 w-7 h-7 border border-white/25 bg-white/[0.02]"
         }`}
         style={{
           willChange: "transform",
         }}
-      >
-        {cursorText && (
-          <span className="animate-in fade-in zoom-in-75 duration-150 select-none">
-            {cursorText}
-          </span>
-        )}
-      </div>
+        aria-hidden="true"
+      />
     </>
   );
 };
