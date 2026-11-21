@@ -399,7 +399,7 @@ export const LoginModal: React.FC<LoginModalProps> = ({
                     />
                   </svg>
                 )}
-                <span>Continue with Google</span>
+                <span>Sign up with Google</span>
               </button>
 
               {/* Visual Separator: OR CONTINUE WITH EMAIL */}
@@ -642,7 +642,7 @@ export const LoginModal: React.FC<LoginModalProps> = ({
                     />
                   </svg>
                 )}
-                <span>Continue with Google</span>
+                <span>Sign in with Google</span>
               </button>
 
               {/* Visual Separator: OR CONTINUE WITH EMAIL */}
