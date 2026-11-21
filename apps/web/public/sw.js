@@ -1,5 +1,5 @@
-// Balaga Service Worker - PWA & Edge Offline Caching
-const CACHE_NAME = 'balaga-v1';
+// Balaga Service Worker - PWA & Edge Offline Caching (v2 with Google Auth & Immediate Cache Invalidation)
+const CACHE_NAME = 'balaga-v2-google-auth';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
@@ -8,10 +8,11 @@ const ASSETS_TO_CACHE = [
 ];
 
 self.addEventListener('install', (event) => {
+  self.skipWaiting();
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       return cache.addAll(ASSETS_TO_CACHE);
-    }).then(() => self.skipWaiting())
+    })
   );
 });
 
@@ -34,20 +35,24 @@ self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
   if (event.request.url.includes('/api/')) return;
 
-  event.respondWith(
-    caches.match(event.request).then((cachedResponse) => {
-      if (cachedResponse) {
-        // Fetch fresh copy in background (stale-while-revalidate)
-        fetch(event.request).then((networkResponse) => {
+  // For HTML documents and navigation, ALWAYS fetch from network first so updates are instant
+  if (event.request.mode === 'navigate' || event.request.headers.get('accept')?.includes('text/html')) {
+    event.respondWith(
+      fetch(event.request)
+        .then((networkResponse) => {
           if (networkResponse && networkResponse.status === 200) {
-            caches.open(CACHE_NAME).then((cache) => {
-              cache.put(event.request, networkResponse);
-            });
+            const clone = networkResponse.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
           }
-        }).catch(() => {});
-        return cachedResponse;
-      }
-      return fetch(event.request);
-    })
+          return networkResponse;
+        })
+        .catch(() => caches.match(event.request))
+    );
+    return;
+  }
+
+  // For static assets, network first with cache fallback
+  event.respondWith(
+    fetch(event.request).catch(() => caches.match(event.request))
   );
 });
