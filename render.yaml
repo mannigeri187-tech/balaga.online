@@ -12,9 +12,9 @@ services:
       - key: PORT
         value: 10000
       - key: ALLOWED_ORIGINS
-        value: https://balaga.online,https://www.balaga.online,https://balagaonline.vercel.app
+        value: https://chill2build.online,https://www.chill2build.online,https://balagaonline.vercel.app,https://balaga.online,https://www.balaga.online
       - key: CORS_ORIGIN
-        value: https://balaga.online
+        value: https://chill2build.online
       - key: ENABLE_DEV_MOCK_AUTH
         value: false
       - key: SUPABASE_URL
