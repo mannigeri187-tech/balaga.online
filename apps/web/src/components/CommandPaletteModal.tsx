@@ -72,7 +72,7 @@ export const CommandPaletteModal: React.FC<CommandPaletteModalProps> = ({
     },
     {
       id: "ai-control-centre",
-      title: "Balaga Intelligence Control Centre",
+      title: "Chill2Build Intelligence Control Centre",
       subtitle: "Privacy controls, AI consent, token audit logs & assistant playground",
       realm: "global",
       icon: Sparkles,
@@ -141,7 +141,7 @@ export const CommandPaletteModal: React.FC<CommandPaletteModalProps> = ({
     },
     {
       id: "f-subdomains",
-      title: "Custom Startup Subdomains (*.balaga.online)",
+      title: "Custom Startup Subdomains (*.chill2build.online)",
       subtitle: "Zero-touch edge routing and automated SSL certificates",
       realm: "founders",
       icon: Globe,

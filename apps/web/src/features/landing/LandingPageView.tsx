@@ -159,15 +159,13 @@ export const LandingPageView: React.FC<LandingPageViewProps> = ({
               onClick={() => scrollToSection("hero")}
               className="flex items-center gap-2.5 group text-left"
             >
-              <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-[#e5a855] via-[#d97706] to-[#b45309] flex items-center justify-center font-black text-[#07080a] text-sm shadow-md shadow-amber-500/20 group-hover:scale-105 transition-transform">
-                B
-              </div>
+              <img src="/icon.svg" alt="Chill2Build" className="w-8 h-8 rounded-xl shadow-md shadow-amber-500/20 group-hover:scale-105 transition-transform object-cover" />
               <div className="flex items-baseline gap-2">
                 <span className="font-extrabold text-base tracking-tight text-white group-hover:text-amber-300 transition-colors">
-                  Balaga
+                  Chill2Build
                 </span>
                 <span className="hidden sm:inline-block text-[9px] font-mono uppercase tracking-widest text-amber-400/90 border border-amber-400/30 px-2 py-0.5 rounded-full bg-amber-950/30">
-                  balaga.online
+                  chill2build.online
                 </span>
               </div>
             </button>
@@ -202,7 +200,7 @@ export const LandingPageView: React.FC<LandingPageViewProps> = ({
               onClick={() => onOpenLogin("signup")}
               className="px-3.5 sm:px-5 py-1.5 rounded-full bg-gradient-to-r from-[#e5a855] to-[#d97706] hover:from-[#f5b865] hover:to-[#e68716] text-[#07080a] text-xs font-bold transition shadow-lg shadow-amber-500/20 flex items-center gap-1.5 group"
             >
-              <span>Join Balaga</span>
+              <span>Join Chill2Build</span>
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
             </button>
           </div>
@@ -279,7 +277,7 @@ export const LandingPageView: React.FC<LandingPageViewProps> = ({
           >
             <div className="flex items-center gap-1.5 px-3 py-1.5 w-full sm:w-auto flex-1 text-left">
               <span className="font-mono text-xs sm:text-sm text-amber-400/90 font-semibold select-none">
-                balaga.online/@
+                chill2build.online/@
               </span>
               <input
                 type="text"
@@ -447,13 +445,13 @@ export const LandingPageView: React.FC<LandingPageViewProps> = ({
               <div className="p-6 rounded-3xl bg-gradient-to-r from-amber-950/30 via-[#181510] to-[#12141c] border border-amber-500/30 space-y-3">
                 <div className="flex items-center gap-2 text-xs font-mono text-[#e5a855] font-semibold">
                   <Sparkles className="w-4 h-4 text-[#e5a855]" />
-                  <span>THE BALAGA SOVEREIGN ALTERNATIVE</span>
+                  <span>THE CHILL2BUILD SOVEREIGN ALTERNATIVE</span>
                 </div>
                 <h3 className="text-xl font-bold text-white">
                   One Master Account. Zero Data Bleed. Two Parallel Realms.
                 </h3>
                 <p className="text-xs sm:text-sm text-[#a8a498] leading-relaxed">
-                  Log in once at <strong>balaga.online</strong>. Enjoy authentic cultural life, vernacular reels, and friends on one side. Switch instantly to recruit talent, book mentor office hours, and launch products on the other.
+                  Log in once at <strong>chill2build.online</strong>. Enjoy authentic cultural life, vernacular reels, and friends on one side. Switch instantly to recruit talent, book mentor office hours, and launch products on the other.
                 </p>
               </div>
             </TiltCard>
@@ -896,7 +894,7 @@ export const LandingPageView: React.FC<LandingPageViewProps> = ({
                   {/* Animated Referrer Breakdown Preview */}
                   <div className="p-3.5 rounded-2xl bg-[#060a08] border border-emerald-500/20 font-mono text-xs space-y-2 mt-2">
                     <div className="flex items-center justify-between text-emerald-400 font-bold">
-                      <span>balaga.link/p/neural</span>
+                      <span>chill2build.link/p/neural</span>
                       <span>1,842 Clicks</span>
                     </div>
 
@@ -1104,7 +1102,7 @@ export const LandingPageView: React.FC<LandingPageViewProps> = ({
       </section>
 
       {/* ─────────────────────────────────────────────────────────────
-          SECTION 8: HOW BALAGA WORKS
+          SECTION 8: HOW CHILL2BUILD WORKS
       ───────────────────────────────────────────────────────────── */}
       <section id="how-it-works" className="py-20 sm:py-28 px-4 sm:px-8 max-w-6xl mx-auto border-b border-white/10">
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-14">
@@ -1112,7 +1110,7 @@ export const LandingPageView: React.FC<LandingPageViewProps> = ({
             [ 08 // THE JOURNEY ]
           </span>
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
-            How Balaga Works.
+            How Chill2Build Works.
           </h2>
           <p className="text-xs sm:text-sm text-[#a09c91] leading-relaxed">
             Three intuitive steps to liberate your digital existence from corporate walled gardens.
@@ -1171,7 +1169,7 @@ export const LandingPageView: React.FC<LandingPageViewProps> = ({
           </h2>
 
           <p className="text-xs sm:text-sm text-[#a09c91] max-w-xl mx-auto leading-relaxed">
-            Join creators, builders, and community visionaries already active on Balaga's sovereign dual-realm network.
+            Join creators, builders, and community visionaries already active on Chill2Build's sovereign dual-realm network.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
@@ -1179,7 +1177,7 @@ export const LandingPageView: React.FC<LandingPageViewProps> = ({
               onClick={() => onOpenLogin("signup")}
               className="px-7 py-3.5 rounded-full bg-gradient-to-r from-[#e5a855] via-[#d97706] to-[#b45309] hover:from-[#f5b865] hover:to-[#c66307] text-[#07080a] text-xs sm:text-sm font-black transition shadow-2xl shadow-amber-500/30 flex items-center gap-2 group"
             >
-              <span>Join Balaga — It's Free</span>
+              <span>Join Chill2Build — It's Free</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
 
@@ -1216,11 +1214,9 @@ export const LandingPageView: React.FC<LandingPageViewProps> = ({
           <div className="flex flex-col md:flex-row justify-between gap-8">
             <div className="space-y-3 max-w-sm">
               <div className="flex items-center gap-2.5">
-                <div className="w-7 h-7 rounded-full bg-gradient-to-tr from-[#e5a855] to-[#b45309] flex items-center justify-center font-black text-[#07080a] text-xs">
-                  B
-                </div>
+                <img src="/icon.svg" alt="Chill2Build" className="w-7 h-7 rounded-lg" />
                 <span className="font-extrabold text-base tracking-tight text-white">
-                  Balaga.online
+                  Chill2Build
                 </span>
               </div>
               <p className="text-xs text-[#8c887e] leading-relaxed">
@@ -1304,7 +1300,7 @@ export const LandingPageView: React.FC<LandingPageViewProps> = ({
 
           <div className="pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-[#6c6960]">
             <div>
-              © 2026 Balaga.online. All rights reserved. Built for Bharat & the Global Sovereign Web.
+              © 2026 Chill2Build. All rights reserved. Built for Bharat & the Global Sovereign Web.
             </div>
             <div className="flex items-center gap-4 font-mono text-[10px]">
               <span>ZERO_MDR: ENABLED</span>

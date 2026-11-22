@@ -49,7 +49,7 @@ export const UniversalPortalModal: React.FC<UniversalPortalModalProps> = ({
   const [copied, setCopied] = useState(false);
   const [activeTab, setActiveTab] = useState<"card" | "qr">("card");
 
-  const portalUrl = `https://balaga.online/@${username}/portal`;
+  const portalUrl = `https://chill2build.online/@${username}/portal`;
 
   const handleCopy = () => {
     navigator.clipboard.writeText(portalUrl);
@@ -61,8 +61,8 @@ export const UniversalPortalModal: React.FC<UniversalPortalModalProps> = ({
     if (navigator.share) {
       try {
         await navigator.share({
-          title: `${name} | Balaga Universal Portal`,
-          text: `Explore ${name}'s verified projects, creative showcase, and IRL beacons on Balaga.`,
+          title: `${name} | Chill2Build Universal Portal`,
+          text: `Explore ${name}'s verified projects, creative showcase, and IRL beacons on Chill2Build.`,
           url: portalUrl,
         });
       } catch {
@@ -83,7 +83,7 @@ export const UniversalPortalModal: React.FC<UniversalPortalModalProps> = ({
         <div className="px-5 py-3.5 border-b border-slate-800/80 flex items-center justify-between bg-slate-900/60">
           <div className="flex items-center gap-2">
             <Globe className="w-4 h-4 text-violet-400" />
-            <span className="text-xs font-semibold text-slate-200">Universal Balaga Portal</span>
+            <span className="text-xs font-semibold text-slate-200">Universal Chill2Build Portal</span>
             <span className="text-[10px] font-mono tracking-wider px-2 py-0.5 rounded-full bg-violet-500/10 border border-violet-500/30 text-violet-300">
               S20 LIVE
             </span>
@@ -220,14 +220,14 @@ export const UniversalPortalModal: React.FC<UniversalPortalModalProps> = ({
             /* TAB 2: IRL QR SCAN */
             <div className="space-y-4 text-center py-2">
               <p className="text-xs text-slate-400">
-                Let peers and organizers scan this code offline at meetups to open your Universal Balaga Portal instantly.
+                Let peers and organizers scan this code offline at meetups to open your Universal Chill2Build Portal instantly.
               </p>
 
               {/* Dynamic QR Block */}
               <div className="p-6 bg-white rounded-2xl mx-auto w-fit shadow-xl flex flex-col items-center">
                 <QrCode className="w-48 h-48 text-slate-900" />
                 <div className="mt-2 text-slate-900 text-[11px] font-mono font-bold tracking-tight">
-                  balaga.online/@{username}/portal
+                  chill2build.online/@{username}/portal
                 </div>
               </div>
 

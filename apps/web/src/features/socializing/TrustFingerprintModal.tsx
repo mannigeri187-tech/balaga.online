@@ -27,7 +27,7 @@ export const TrustFingerprintModal: React.FC<TrustFingerprintModalProps> = ({
     {
       id: "device",
       title: "Hardware Device Attestation",
-      description: "Cryptographically verified device running genuine Balaga client",
+      description: "Cryptographically verified device running genuine Chill2Build client",
       score: "Verified Secure",
       status: "pass",
       icon: <Smartphone className="w-4 h-4 text-emerald-400" />,
@@ -75,7 +75,7 @@ export const TrustFingerprintModal: React.FC<TrustFingerprintModalProps> = ({
             </div>
             <div>
               <h3 className="text-sm font-bold text-white flex items-center gap-2">
-                Balaga Trust Fingerprint
+                Chill2Build Trust Fingerprint
                 <span className="text-[10px] font-mono bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 px-1.5 py-0.5 rounded">
                   UNPURCHASABLE
                 </span>
@@ -169,7 +169,7 @@ export const TrustFingerprintModal: React.FC<TrustFingerprintModalProps> = ({
 
           {/* Footer Commitment */}
           <div className="pt-2 text-[10px] text-slate-500 text-center border-t border-slate-800">
-            Balaga Authenticity Standard: Badges are earned through community actions, never sold for money.
+            Chill2Build Authenticity Standard: Badges are earned through community actions, never sold for money.
           </div>
         </div>
       </div>

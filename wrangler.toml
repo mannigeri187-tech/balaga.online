@@ -7,3 +7,6 @@ compatibility_flags = ["nodejs_compat"]
 directory = "apps/web/dist"
 binding = "ASSETS"
 not_found_handling = "single-page-application"
+
+[vars]
+BACKEND_API_ORIGIN = "https://balaga-online.onrender.com"

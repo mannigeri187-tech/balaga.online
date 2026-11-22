@@ -311,7 +311,7 @@ export const WorldLayout: React.FC<WorldLayoutProps> = ({ onNavigateToLanding })
           }`}
         >
           <span className="w-2 h-2 rounded-full bg-amber-400 group-hover:animate-ping" />
-          <span>✨ Balaga AI</span>
+          <span>✨ Chill2Build AI</span>
         </button>
 
         <button

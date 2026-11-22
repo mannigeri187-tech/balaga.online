@@ -49,7 +49,7 @@ export const CalSchedulerModal: React.FC<CalSchedulerModalProps> = ({
   const [step, setStep] = useState<"slot_selection" | "booking_details" | "confirmed">("slot_selection");
   const [agenda, setAgenda] = useState<string>("");
   const [guestName, setGuestName] = useState<string>("Aarav Sharma");
-  const [guestEmail, setGuestEmail] = useState<string>("aarav.builder@balaga.online");
+  const [guestEmail, setGuestEmail] = useState<string>("aarav.builder@chill2build.online");
   const selectedTimezone = "Asia/Kolkata (IST, GMT+5:30)";
 
   // Generate the next 10 business days starting from today
@@ -100,13 +100,13 @@ export const CalSchedulerModal: React.FC<CalSchedulerModalProps> = ({
   const generatedMeetId = useMemo(() => {
     return `huddle-${Math.random().toString(36).substring(2, 8)}`;
   }, [host.name]);
-  const meetUrl = `https://meet.balaga.online/${generatedMeetId}`;
+  const meetUrl = `https://meet.chill2build.online/${generatedMeetId}`;
 
   // Generate Google Calendar Link
   const googleCalendarUrl = useMemo(() => {
-    const title = encodeURIComponent(`Balaga 1-on-1: ${host.name} & ${guestName}`);
+    const title = encodeURIComponent(`Chill2Build 1-on-1: ${host.name} & ${guestName}`);
     const details = encodeURIComponent(
-      `Mentorship/Discussion Session on Balaga Founders Realm.\nHost: ${host.name} (${host.role})\nTopic: ${host.topic || "Startup Architecture"}\nMeet Link: ${meetUrl}\nAgenda: ${agenda || "Discussion on roadmap and scale."}`
+      `Mentorship/Discussion Session on Chill2Build Founders Realm.\nHost: ${host.name} (${host.role})\nTopic: ${host.topic || "Startup Architecture"}\nMeet Link: ${meetUrl}\nAgenda: ${agenda || "Discussion on roadmap and scale."}`
     );
     const location = encodeURIComponent(meetUrl);
     return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&details=${details}&location=${location}`;
@@ -117,9 +117,9 @@ export const CalSchedulerModal: React.FC<CalSchedulerModalProps> = ({
     const icsContent = [
       "BEGIN:VCALENDAR",
       "VERSION:2.0",
-      "PRODID:-//Balaga Online//Cal Scheduler//EN",
+      "PRODID:-//Chill2Build Online//Cal Scheduler//EN",
       "BEGIN:VEVENT",
-      `SUMMARY:Balaga Session with ${host.name}`,
+      `SUMMARY:Chill2Build Session with ${host.name}`,
       `DESCRIPTION:${host.topic || "Founders Mentorship"} - Meeting link: ${meetUrl}`,
       `LOCATION:${meetUrl}`,
       `DTSTART:${activeDate.isoString.replace(/-/g, "")}T100000Z`,
@@ -133,7 +133,7 @@ export const CalSchedulerModal: React.FC<CalSchedulerModalProps> = ({
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = `balaga-session-${host.name.toLowerCase().replace(/\s+/g, "-")}.ics`;
+    a.download = `chill2build-session-${host.name.toLowerCase().replace(/\s+/g, "-")}.ics`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -319,7 +319,7 @@ export const CalSchedulerModal: React.FC<CalSchedulerModalProps> = ({
                 <div className="space-y-2 mb-6">
                   <div className="flex items-center gap-2 text-xs text-slate-300">
                     <Video className="w-4 h-4 text-emerald-400" />
-                    <span>Balaga Video Huddle (Encrypted P2P)</span>
+                    <span>Chill2Build Video Huddle (Encrypted P2P)</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-slate-400">
                     <Globe className="w-4 h-4 text-indigo-400" />
@@ -332,7 +332,7 @@ export const CalSchedulerModal: React.FC<CalSchedulerModalProps> = ({
               <div className="pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
                 <span>Fee</span>
                 <span className="font-bold text-emerald-400">
-                  {host.pricingLabel || "Free (Balaga Founders)"}
+                  {host.pricingLabel || "Free (Chill2Build Founders)"}
                 </span>
               </div>
             </div>

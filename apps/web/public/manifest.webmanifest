@@ -1,11 +1,11 @@
 {
-  "name": "Balaga | One Account, Two Worlds",
-  "short_name": "Balaga",
-  "description": "India-first social & startup networking platform with two strictly separated worlds: Socializing and Founders.",
+  "name": "Chill2Build | Chill, Connect, Collaborate, Build",
+  "short_name": "Chill2Build",
+  "description": "Sovereign dual-realm platform connecting authentic social communities with a 14-tool startup and founder ecosystem under one identity.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#020617",
-  "theme_color": "#0f172a",
+  "background_color": "#0B1B3B",
+  "theme_color": "#0B1B3B",
   "orientation": "portrait-primary",
   "icons": [
     {

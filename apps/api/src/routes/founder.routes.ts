@@ -16081,7 +16081,7 @@ founderRouter.post("/build-spaces/:id/meetings", (req: Request, res: Response) =
     timezone: data.timezone || "Asia/Kolkata",
     participantProfileIds: data.participantProfileIds || [currentFounder.id],
     agenda: data.agenda,
-    onlineMeetingLink: data.onlineMeetingLink || "https://meet.balaga.online/" + space.slug,
+    onlineMeetingLink: data.onlineMeetingLink || "https://meet.chill2build.online/" + space.slug,
     publicLocation: data.publicLocation,
     notes: data.notes,
     status: "confirmed",

@@ -11,7 +11,7 @@ const AppContent: React.FC = () => {
   const { switchWorld } = useWorld();
   const { isAuthenticated, isEmailVerified, isLoading: isAuthLoading } = useAuth();
 
-  // Route state: "landing" is the default homepage for https://balaga.online /
+  // Route state: "landing" is the default homepage for https://chill2build.online /
   const [currentRoute, setCurrentRoute] = useState<"landing" | "app">(() => {
     if (typeof window === "undefined") return "landing";
     const path = window.location.pathname;
@@ -118,7 +118,7 @@ const AppContent: React.FC = () => {
           // Guard: unauthenticated or unverified users cannot enter /app
           setCurrentRoute("landing");
           setAuthModalMode("login");
-          setAuthModalMessage("Please sign in with a verified account to access Balaga.");
+          setAuthModalMessage("Please sign in with a verified account to access Chill2Build.");
           setIsAuthModalOpen(true);
           window.history.replaceState({}, "", "/");
         } else {
@@ -151,7 +151,7 @@ const AppContent: React.FC = () => {
       if (!isAuthenticated || !isEmailVerified) {
         setCurrentRoute("landing");
         setAuthModalMode("login");
-        setAuthModalMessage("Please sign in with your verified Balaga account.");
+        setAuthModalMessage("Please sign in with your verified Chill2Build account.");
         setIsAuthModalOpen(true);
         window.history.replaceState({}, "", "/");
       }
@@ -161,7 +161,7 @@ const AppContent: React.FC = () => {
   const navigateToApp = (realm?: "socializing" | "founders") => {
     if (!isAuthenticated || !isEmailVerified) {
       setAuthModalMode("login");
-      setAuthModalMessage("Please sign in with a verified account to access Balaga.");
+      setAuthModalMessage("Please sign in with a verified account to access Chill2Build.");
       setIsAuthModalOpen(true);
       return;
     }

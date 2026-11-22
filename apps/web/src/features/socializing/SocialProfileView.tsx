@@ -113,7 +113,7 @@ export const SocialProfileView: React.FC<SocialProfileViewProps> = ({
   const [showCategoryLabel, setShowCategoryLabel] = useState<boolean>(() => {
     return localStorage.getItem("balaga_show_cat") !== "false";
   });
-  const [proEmail, setProEmail] = useState("aarav.social@balaga.online");
+  const [proEmail, setProEmail] = useState("aarav.social@chill2build.online");
 
   // 1. Note State & Modal (Instagram Note Feature)
   const [activeNote, setActiveNote] = useState<string | null>("Filter coffee & sketches ☕");
@@ -259,7 +259,7 @@ export const SocialProfileView: React.FC<SocialProfileViewProps> = ({
     },
     {
       id: "sc-3",
-      title: "Balaga Design Tokens & Spatial UI",
+      title: "Chill2Build Design Tokens & Spatial UI",
       category: "Digital Product Architecture",
       imageUrl: "https://images.unsplash.com/photo-1517649763962-0c623266ddc0?w=1000&q=80",
       description: "A dark-mode first, tactile design language engineered for high-density multi-world interaction and low cognitive load.",
@@ -301,7 +301,7 @@ export const SocialProfileView: React.FC<SocialProfileViewProps> = ({
   const [lifeChapters, setLifeChapters] = useState([
     {
       id: "ch-3",
-      title: "Chapter 3: Indiranagar Studio & Building Balaga",
+      title: "Chapter 3: Indiranagar Studio & Building Chill2Build",
       era: "2025 – Present",
       location: "Bengaluru, India",
       summary: "Setting up a hardware & design workspace with friends, prototyping tactile multi-realm software, and dawn cycling loops to Nandi.",
@@ -317,7 +317,7 @@ export const SocialProfileView: React.FC<SocialProfileViewProps> = ({
           photoUrl: "https://images.unsplash.com/photo-1517649763962-0c623266ddc0?w=800&q=80",
           title: "First Studio Workbench Setup",
           date: "Jan 2026",
-          note: "Soldered the telemetry receivers and framed the first Balaga paper sketches on the brick wall.",
+          note: "Soldered the telemetry receivers and framed the first Chill2Build paper sketches on the brick wall.",
         },
         {
           id: "m-32",
@@ -387,7 +387,7 @@ export const SocialProfileView: React.FC<SocialProfileViewProps> = ({
       title: newChapterTitle.trim(),
       era: newChapterEra.trim() || "2026",
       location: newChapterLocation.trim() || "Bengaluru",
-      summary: newChapterSummary.trim() || "A new personal chapter on Balaga.",
+      summary: newChapterSummary.trim() || "A new personal chapter on Chill2Build.",
       isCapsuleLocked: false,
       capsuleStatusText: "Active Chapter • Just Opened",
       contributors: [],
@@ -643,7 +643,7 @@ export const SocialProfileView: React.FC<SocialProfileViewProps> = ({
                 type="button"
                 onClick={() => setIsTrustModalOpen(true)}
                 className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-mono font-semibold bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-500/25 transition-colors cursor-pointer"
-                title="View Balaga Trust Fingerprint (Unpurchasable Peer Trust)"
+                title="View Chill2Build Trust Fingerprint (Unpurchasable Peer Trust)"
               >
                 <ShieldCheck className="w-3 h-3 text-emerald-400" />
                 <span>98% Trust</span>
@@ -704,7 +704,7 @@ export const SocialProfileView: React.FC<SocialProfileViewProps> = ({
                   type="button"
                   onClick={() => setIsPortalModalOpen(true)}
                   className="px-2.5 py-1.5 rounded-lg text-xs font-semibold border flex items-center gap-1.5 transition-colors bg-slate-800 text-slate-300 border-slate-700 hover:text-white"
-                  title="Universal Balaga Portal (IRL QR & Public Hub)"
+                  title="Universal Chill2Build Portal (IRL QR & Public Hub)"
                 >
                   <Globe className="w-3.5 h-3.5 text-violet-400" />
                   <span>Portal 🌐</span>
@@ -877,13 +877,13 @@ export const SocialProfileView: React.FC<SocialProfileViewProps> = ({
                 </span>
               )}
               <a
-                href={`https://balaga.online/@${profile.username}`}
+                href={`https://chill2build.online/@${profile.username}`}
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-1 text-violet-400 hover:underline font-medium"
               >
                 <ExternalLink className="w-3.5 h-3.5" />
-                balaga.online/@{profile.username}
+                chill2build.online/@{profile.username}
               </a>
             </div>
 
@@ -980,7 +980,7 @@ export const SocialProfileView: React.FC<SocialProfileViewProps> = ({
 
             <div className="flex items-center gap-2">
               <a
-                href={`upi://pay?pa=aarav.social@okhdfcbank&pn=BalagaBuilder&cu=INR&tn=Appreciating Builder ${encodeURIComponent(profile.displayName)}`}
+                href={`upi://pay?pa=aarav.social@okhdfcbank&pn=Chill2BuildBuilder&cu=INR&tn=Appreciating Builder ${encodeURIComponent(profile.displayName)}`}
                 className="px-3 py-1.5 bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/40 text-amber-300 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors"
               >
                 <IndianRupee className="w-3.5 h-3.5" />
@@ -1235,7 +1235,7 @@ export const SocialProfileView: React.FC<SocialProfileViewProps> = ({
                         </span>
 
                         <a
-                          href={`upi://pay?pa=aarav.social@okhdfcbank&pn=BalagaCreator&cu=INR&tn=Appreciating ${encodeURIComponent(item.title)} on Balaga Showcase`}
+                          href={`upi://pay?pa=aarav.social@okhdfcbank&pn=Chill2BuildCreator&cu=INR&tn=Appreciating ${encodeURIComponent(item.title)} on Chill2Build Showcase`}
                           className="px-2.5 py-1 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/40 text-amber-300 rounded-lg font-semibold flex items-center gap-1 transition-colors"
                           title="Send direct Shabaash tip (0% fee)"
                         >
@@ -2098,7 +2098,7 @@ export const SocialProfileView: React.FC<SocialProfileViewProps> = ({
                     type="email"
                     value={proEmail}
                     onChange={(e) => setProEmail(e.target.value)}
-                    placeholder="contact@balaga.online"
+                    placeholder="contact@chill2build.online"
                     className="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-200"
                   />
                 </div>
@@ -2244,7 +2244,7 @@ export const SocialProfileView: React.FC<SocialProfileViewProps> = ({
               <span className="text-white font-bold text-sm mt-3 tracking-wide drop-shadow">
                 @{profile.username}
               </span>
-              <span className="text-white/80 text-[11px] drop-shadow">Balaga Socializing</span>
+              <span className="text-white/80 text-[11px] drop-shadow">Chill2Build Socializing</span>
             </div>
 
             <div className="space-y-2">
@@ -2252,7 +2252,7 @@ export const SocialProfileView: React.FC<SocialProfileViewProps> = ({
                 variant="primary"
                 size="sm"
                 onClick={() => {
-                  navigator.clipboard?.writeText(`https://balaga.online/@${profile.username}`);
+                  navigator.clipboard?.writeText(`https://chill2build.online/@${profile.username}`);
                   alert("Profile link copied to clipboard!");
                 }}
                 className="w-full flex items-center justify-center gap-2 bg-violet-600 hover:bg-violet-500 font-bold"
@@ -2382,7 +2382,7 @@ export const SocialProfileView: React.FC<SocialProfileViewProps> = ({
         username={profile.username}
         name={profile.displayName}
         avatarUrl={profile.avatarUrl || "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&q=80"}
-        bio={profile.bio || "Digital craftsman & builder on Balaga."}
+        bio={profile.bio || "Digital craftsman & builder on Chill2Build."}
         isBuilder={!!builderCard}
       />
 

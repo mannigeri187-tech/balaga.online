@@ -166,7 +166,7 @@ export const LoginModal: React.FC<LoginModalProps> = ({
         return;
       }
 
-      setSuccessMessage("Authentication verified. Entering Balaga...");
+      setSuccessMessage("Authentication verified. Entering Chill2Build...");
       setTimeout(() => {
         onSuccess(selectedRealm);
         onClose();
@@ -326,12 +326,10 @@ export const LoginModal: React.FC<LoginModalProps> = ({
 
         {/* Brand Header */}
         <div className="flex items-center gap-3.5 mb-6">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-[#7047EB] via-[#4F46E5] to-[#22B8CF] flex items-center justify-center font-black text-white text-base shadow-md shadow-[#7047EB]/20">
-            B
-          </div>
+          <img src="/icon.svg" alt="Chill2Build" className="w-9 h-9 rounded-xl shadow-md shadow-amber-500/20 object-cover" />
           <div>
             <div className="flex items-center gap-2">
-              <span className="font-extrabold text-sm tracking-tight text-[#F4F5FA]">Balaga</span>
+              <span className="font-extrabold text-sm tracking-tight text-[#F4F5FA]">Chill2Build</span>
               <span className="text-[10px] font-mono uppercase tracking-widest text-[#22B8CF] border border-[#22B8CF]/30 px-1.5 py-0.5 rounded bg-[#22B8CF]/10">
                 Sovereign Auth
               </span>
@@ -362,7 +360,7 @@ export const LoginModal: React.FC<LoginModalProps> = ({
           <div>
             <div className="mb-5">
               <h2 className="text-xl font-bold tracking-tight text-[#F4F5FA]">
-                Create your Balaga account
+                Create your Chill2Build account
               </h2>
               <p className="text-xs text-[#9CA3B8] mt-1">
                 Your sovereign credential for authentic social discovery and founder ventures.
@@ -574,7 +572,7 @@ export const LoginModal: React.FC<LoginModalProps> = ({
 
               {/* Legal & Terms */}
               <p className="text-[10px] text-[#9CA3B8] text-center leading-relaxed">
-                By registering, you confirm you are 18+ and agree to Balaga's{" "}
+                By registering, you confirm you are 18+ and agree to Chill2Build's{" "}
                 <span className="text-[#F4F5FA] underline cursor-pointer">Terms of Service</span> and{" "}
                 <span className="text-[#F4F5FA] underline cursor-pointer">Zero-Bleed Privacy Policy</span>.
               </p>
@@ -605,7 +603,7 @@ export const LoginModal: React.FC<LoginModalProps> = ({
           <div>
             <div className="mb-5">
               <h2 className="text-xl font-bold tracking-tight text-[#F4F5FA]">
-                Sign in to Balaga
+                Sign in to Chill2Build
               </h2>
               <p className="text-xs text-[#9CA3B8] mt-1">
                 Enter your verified credentials or continue with Google to access your account.
@@ -769,7 +767,7 @@ export const LoginModal: React.FC<LoginModalProps> = ({
                 <span className="text-[#F4F5FA] font-mono font-medium">
                   {maskEmail(email) || "your email"}
                 </span>
-                . You must click the link to verify your account before accessing Balaga.
+                . You must click the link to verify your account before accessing Chill2Build.
               </p>
             </div>
 
@@ -779,7 +777,7 @@ export const LoginModal: React.FC<LoginModalProps> = ({
                 <span>Next steps:</span>
               </div>
               <ol className="list-decimal list-inside space-y-1 text-[11px] text-[#9CA3B8]">
-                <li>Open the email sent from Balaga.</li>
+                <li>Open the email sent from Chill2Build.</li>
                 <li>Click <strong>Confirm your email</strong>.</li>
                 <li>Return here to sign in with your credentials.</li>
               </ol>

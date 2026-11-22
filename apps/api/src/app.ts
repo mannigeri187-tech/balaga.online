@@ -16,6 +16,9 @@ export const app = express();
 app.use(helmet());
 
 const defaultAllowedOrigins = [
+  "https://chill2build.online",
+  "https://www.chill2build.online",
+  "https://balagaonline.vercel.app",
   "https://balaga.online",
   "https://www.balaga.online",
   "http://localhost:3000",

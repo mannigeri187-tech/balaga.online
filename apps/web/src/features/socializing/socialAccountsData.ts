@@ -223,11 +223,11 @@ export const getAccountByUsername = (username?: string): PublicSocialAccount => 
   return {
     id: `acc-${username || "user"}`,
     username: username || "creator",
-    displayName: username ? username.replace(/_/g, " ").replace(/\b\w/g, (l) => l.toUpperCase()) : "Balaga Creator",
+    displayName: username ? username.replace(/_/g, " ").replace(/\b\w/g, (l) => l.toUpperCase()) : "Chill2Build Creator",
     avatarUrl: `https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&q=80`,
     isVerified: false,
     category: "Community Creator",
-    bio: "Sharing stories, creative moments & local passions on Balaga Socializing 📸✨",
+    bio: "Sharing stories, creative moments & local passions on Chill2Build Socializing 📸✨",
     postsCount: 18,
     followersCount: "2.4k",
     followingCount: 180,
@@ -260,8 +260,8 @@ export interface PublicBuilderCard {
 export const BUILDER_PROFILES: Record<string, PublicBuilderCard> = {
   aarav_social: {
     isPublicBuilder: true,
-    headline: "Founder & Full-stack Engineer at Balaga",
-    startupName: "Balaga.online",
+    headline: "Founder & Full-stack Engineer at Chill2Build",
+    startupName: "Chill2Build.online",
     stage: "Seed / Active v1",
     techStack: ["TypeScript", "React", "Node.js", "Supabase", "Tailwind"],
     superpowers: ["Full-Stack Architecture", "Product Design", "Distributed Systems"],

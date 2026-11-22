@@ -1,5 +1,5 @@
-// Balaga Service Worker - PWA & Edge Offline Caching (v2 with Google Auth & Immediate Cache Invalidation)
-const CACHE_NAME = 'balaga-v2-google-auth';
+// Chill2Build Service Worker - PWA & Edge Offline Caching (v1)
+const CACHE_NAME = 'chill2build-v1';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',

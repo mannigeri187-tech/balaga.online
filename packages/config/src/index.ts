@@ -1,7 +1,8 @@
 // Application Constants & Config
 
-export const DEFAULT_BRAND_NAME = "Balaga";
-export const BRAND_DOMAIN = "balaga.online";
+export const DEFAULT_BRAND_NAME = "Chill2Build";
+export const BRAND_DOMAIN = "chill2build.online";
+export const BRAND_TAGLINE = "Chill. Connect. Collaborate. Build.";
 
 export const WORLDS = {
   SOCIALIZING: "socializing",
@@ -443,7 +444,7 @@ export const BUILD_SPACE_MEETING_STATUSES = [
 export type BuildSpaceMeetingStatus = (typeof BUILD_SPACE_MEETING_STATUSES)[number];
 
 export const BUILD_SPACES_REGULATORY_DISCLAIMER =
-  "Balaga Build Spaces provides secure project collaboration, task tracking, and milestone coordination. Internal workspace contents, tasks, chats, and documents remain private to authorized members.";
+  "Chill2Build Spaces provides secure project collaboration, task tracking, and milestone coordination. Internal workspace contents, tasks, chats, and documents remain private to authorized members.";
 
 // Feature 13: Founders Inbox & Notifications Constants
 export const FOUNDERS_INBOX_CATEGORIES = [
@@ -511,7 +512,7 @@ export const FOUNDERS_NOTIFICATION_CATEGORIES = [
 export type FoundersNotificationCategory = (typeof FOUNDERS_NOTIFICATION_CATEGORIES)[number];
 
 export const FOUNDERS_INBOX_DISCLAIMER =
-  "Balaga Founders Inbox provides unified, confidential communication across professional networks, partnerships, mentorships, and workspaces. Communications remain strictly segregated from Socializing.";
+  "Chill2Build Founders Inbox provides unified, confidential communication across professional networks, partnerships, mentorships, and workspaces. Communications remain strictly segregated from Socializing.";
 
 // Feature 14: Verification & Premium System Constants
 export const VERIFICATION_TYPES = {
@@ -616,7 +617,7 @@ export const PREMIUM_BENEFITS = [
 export const MAX_CONNECTION_NOTE_LENGTH = 300;
 
 export const VERIFICATION_LEGAL_DISCLAIMER =
-  "Verification confirms platform review of provided credentials and does not constitute financial, legal, endorsement, or investment advice. Balaga does not guarantee business viability or commercial success.";
+  "Verification confirms platform review of provided credentials and does not constitute financial, legal, endorsement, or investment advice. Chill2Build does not guarantee business viability or commercial success.";
 
 /**
  * India Regulatory Compliance & Legal Disclosures
@@ -625,13 +626,13 @@ export const VERIFICATION_LEGAL_DISCLAIMER =
  */
 export const INDIA_COMPLIANCE = {
   INTERMEDIARY_STATUS:
-    "Balaga (balaga.online) operates strictly as an intermediary communication and networking platform under Section 79 of the Information Technology Act, 2000. Balaga does not hold, manage, process, or escrow user funds, investment sums, or commercial transactions.",
+    "Chill2Build (chill2build.online) operates strictly as an intermediary communication and networking platform under Section 79 of the Information Technology Act, 2000. Chill2Build does not hold, manage, process, or escrow user funds, investment sums, or commercial transactions.",
   FINANCIAL_DISCLAIMER:
-    "Balaga is not an RBI-licensed non-banking financial company (NBFC), payment aggregator, or SEBI-registered investment advisor / merchant banker. All financial discussions, co-founding equity negotiations, investment connections, and commercial partnership settlements occur directly and externally between independent parties.",
+    "Chill2Build is not an RBI-licensed non-banking financial company (NBFC), payment aggregator, or SEBI-registered investment advisor / merchant banker. All financial discussions, co-founding equity negotiations, investment connections, and commercial partnership settlements occur directly and externally between independent parties.",
   GRIEVANCE_OFFICER: {
     title: "Grievance Redressal Officer (IT Rules, 2021)",
-    name: "Grievance Officer - Balaga Legal Operations",
-    email: "grievance@balaga.online",
+    name: "Grievance Officer - Chill2Build Legal Operations",
+    email: "grievance@chill2build.online",
     responseWindow: "Within 24 hours acknowledgment, redressal within 15 days",
     address: "Bengaluru, Karnataka, India",
   },
@@ -639,7 +640,7 @@ export const INDIA_COMPLIANCE = {
     law: "Digital Personal Data Protection Act (DPDP Act), 2023",
     summary:
       "Users maintain absolute rights to access, correction, erasure of personal data, and grievance redressal. World-scoped data segregation enforces that Socializing and Founders personal data are treated as independent digital representations.",
-    dataFiduciary: "Balaga Online",
+    dataFiduciary: "Chill2Build Online",
   },
 } as const;
 

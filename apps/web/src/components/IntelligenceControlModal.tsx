@@ -354,7 +354,7 @@ export const IntelligenceControlModal: React.FC<IntelligenceControlModalProps> =
             <div>
               <div className="flex items-center gap-2">
                 <h2 className="text-base font-bold text-slate-100">
-                  Balaga Intelligence — {isSocial ? "Socializing AI" : "Founders AI"}
+                  Chill2Build Intelligence — {isSocial ? "Socializing AI" : "Founders AI"}
                 </h2>
                 <span className="text-[10px] font-mono tracking-wider px-2 py-0.5 rounded-full bg-slate-800 border border-slate-700 text-slate-300">
                   MILESTONE 1 LIVE
@@ -556,8 +556,8 @@ export const IntelligenceControlModal: React.FC<IntelligenceControlModalProps> =
                   onChange={(e) => setPromptText(e.target.value)}
                   placeholder={
                     isSocial
-                      ? "Ask Balaga Social Intelligence (e.g. summarize my circle discussions, help write a caption)..."
-                      : "Ask Balaga Founders Intelligence (e.g. summarize startup traction, review pitch outline)..."
+                      ? "Ask Chill2Build Social Intelligence (e.g. summarize my circle discussions, help write a caption)..."
+                      : "Ask Chill2Build Founders Intelligence (e.g. summarize startup traction, review pitch outline)..."
                   }
                   className="w-full h-24 bg-slate-900 border border-slate-800 rounded-2xl p-3 text-xs text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-slate-600"
                 />
@@ -730,7 +730,7 @@ export const IntelligenceControlModal: React.FC<IntelligenceControlModalProps> =
                   <span>Privacy-First Intelligence Agreement</span>
                 </div>
                 <p className="text-slate-400 leading-relaxed">
-                  Under Balaga's core architectural tenets, you maintain absolute sovereignty over how AI assists you. Private messages, cap tables, and unreleased project files are excluded from model training.
+                  Under Chill2Build's core architectural tenets, you maintain absolute sovereignty over how AI assists you. Private messages, cap tables, and unreleased project files are excluded from model training.
                 </p>
               </div>
 
@@ -890,7 +890,7 @@ export const IntelligenceControlModal: React.FC<IntelligenceControlModalProps> =
                   <span>Architectural Zero-Data-Leakage Attestation</span>
                 </div>
                 <p className="text-slate-400 leading-relaxed">
-                  Every request processed by the Balaga Intelligence Gateway executes within a verified cryptographic and database boundary. Private startup cap tables, investment notes, and founder workspaces cannot be queried by Socializing AI, nor can private social connections or messages be accessed by Founders AI.
+                  Every request processed by the Chill2Build Intelligence Gateway executes within a verified cryptographic and database boundary. Private startup cap tables, investment notes, and founder workspaces cannot be queried by Socializing AI, nor can private social connections or messages be accessed by Founders AI.
                 </p>
               </div>
             </div>
