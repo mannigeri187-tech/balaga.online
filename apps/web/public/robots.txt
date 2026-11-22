@@ -1,0 +1,8 @@
+# robots.txt for https://chill2build.online
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Host & Sitemap
+Host: https://chill2build.online
+Sitemap: https://chill2build.online/sitemap.xml
