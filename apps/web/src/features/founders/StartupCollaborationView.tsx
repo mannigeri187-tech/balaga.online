@@ -498,7 +498,7 @@ export const StartupCollaborationView: React.FC<StartupCollaborationViewProps> =
         showToast(data.error || "Dispute filing failed");
         return;
       }
-      showToast("Dispute registered. Balaga platform assistance opened.");
+      showToast("Dispute registered. Chill2Build platform assistance opened.");
       setDisputeDescription("");
       fetchSpaceDetails(selectedSpaceId);
     } catch (err) {
@@ -1310,7 +1310,7 @@ export const StartupCollaborationView: React.FC<StartupCollaborationViewProps> =
                       <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
                       <div>
                         <span className="font-bold block mb-0.5">Platform Regulatory Disclaimer</span>
-                        Balaga provides digital record-keeping and pipeline tracking for startup partnerships. Balaga
+                        Chill2Build provides digital record-keeping and pipeline tracking for startup partnerships. Chill2Build
                         does not hold funds, create wallets, or offer escrow services. All commission, fee, and
                         revenue transfers occur directly between the respective companies.
                       </div>

@@ -116,7 +116,7 @@ export const PredictionStakesModal: React.FC<PredictionStakesModalProps> = ({
                 </span>
               </div>
               <p className="text-xs text-slate-400 mt-0.5">
-                Playful, non-monetary community forecasting markets driven strictly by earned Balaga Karma
+                Playful, non-monetary community forecasting markets driven strictly by earned Chill2Build Karma
               </p>
             </div>
           </div>

@@ -441,7 +441,7 @@ export const SocialNotifications: React.FC<SocialNotificationsProps> = ({ onNavi
                 <div className="flex-1 min-w-0 pr-6">
                   <div className="flex items-baseline gap-2 flex-wrap mb-1">
                     <span className="font-semibold text-xs text-slate-200 hover:text-violet-300">
-                      {actor?.displayName || "Balaga Member"}
+                      {actor?.displayName || "Chill2Build Member"}
                     </span>
                     <span className="text-[10px] text-slate-500 font-mono">
                       {formatTimestamp(notif.createdAt)}

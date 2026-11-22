@@ -30,7 +30,7 @@ export const CodeCastCanvasModal: React.FC<CodeCastCanvasModalProps> = ({
 
   // Terminal State
   const [terminalLogs, setTerminalLogs] = useState<string[]>([
-    "⚡ [balaga-cast] Starting live project broadcast container...",
+    "⚡ [chill2build-cast] Starting live project broadcast container...",
     "📦 Loading wasm runtime for NovaTech Telemetry Rail v2...",
     "🟢 Connected to Mumbai Region Node: bom1-relay-04",
     "🚀 Ready! Type 'test', 'status', or 'run' below.",

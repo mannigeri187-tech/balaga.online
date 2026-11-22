@@ -48,7 +48,7 @@ const mockKudos: VerifiableKudos[] = [
     endorserRole: "Staff DBA at QuickPay",
     proofType: "incident_triage",
     proofTitle: "P99 Latency Tuning during Diwali Peak Load Spike",
-    proofReference: "balaga.online/build-spaces/incident-918",
+    proofReference: "chill2build.online/build-spaces/incident-918",
     verifiedAt: "2 weeks ago"
   },
   {
@@ -59,7 +59,7 @@ const mockKudos: VerifiableKudos[] = [
     endorserRole: "Security Architect at CyberShield",
     proofType: "build_space_ship",
     proofTitle: "Shipped FIDO2 WebAuthn Passkey Native Module",
-    proofReference: "balaga.online/build-spaces/zerotrace/sprint-4",
+    proofReference: "chill2build.online/build-spaces/zerotrace/sprint-4",
     verifiedAt: "1 month ago"
   }
 ];
@@ -230,7 +230,7 @@ export const VerifiableKudosModal: React.FC<VerifiableKudosModalProps> = ({
                   type="text"
                   value={proofRefInput}
                   onChange={(e) => setProofRefInput(e.target.value)}
-                  placeholder="e.g. github.com/repo/commit/7a892b4 or balaga.online/build-spaces/sprint-2"
+                  placeholder="e.g. github.com/repo/commit/7a892b4 or chill2build.online/build-spaces/sprint-2"
                   className="w-full px-3 py-2 bg-slate-950 border border-slate-700 rounded-lg text-xs font-mono text-amber-300 focus:outline-none focus:border-amber-500"
                 />
               </div>

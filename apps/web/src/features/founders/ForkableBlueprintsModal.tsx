@@ -36,7 +36,7 @@ const mockBlueprints: Blueprint[] = [
     category: "pitch-deck",
     categoryLabel: "Fundraising",
     tag: "10-Slide Standard",
-    author: "Balaga Venture Labs",
+    author: "Chill2Build Venture Labs",
     forksCount: 428,
     description: "The battle-tested 10-slide minimalist pitch deck structure that raised over $18M across Bangalore & Silicon Valley accelerators.",
     files: ["deck-outline.md", "financial-model-template.xlsx", "pitch-narrative-script.txt"],
@@ -95,7 +95,7 @@ func MiddlewareRateLimit(next http.Handler) http.Handler {
     description: "Cold email cadence, LinkedIn connection sequences, and ICP qualification rubric used to sign first 10 enterprise pilot contracts.",
     files: ["email-sequence-3step.md", "objection-handling-bible.pdf", "pilot-agreement.docx"],
     snippet: `Touch 1: Pain observation ("Noticed your engineering team is scaling telemetry...")
-Touch 2: Value drop (30-second loom or Balaga Canvas demo link)
+Touch 2: Value drop (30-second loom or Chill2Build Canvas demo link)
 Touch 3: Permission-based soft ask ("Open to a 10-minute teardown on Thursday?")`,
   },
 ];

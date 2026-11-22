@@ -2367,7 +2367,7 @@ export const SocialProfileView: React.FC<SocialProfileViewProps> = ({
         onToggleMonkMode={handleToggleMonkMode}
       />
 
-      {/* BALAGA TRUST FINGERPRINT (S18) */}
+      {/* CHILL2BUILD TRUST FINGERPRINT (S18) */}
       <TrustFingerprintModal
         isOpen={isTrustModalOpen}
         onClose={() => setIsTrustModalOpen(false)}
@@ -2375,7 +2375,7 @@ export const SocialProfileView: React.FC<SocialProfileViewProps> = ({
         displayName={profile.displayName}
       />
 
-      {/* UNIVERSAL BALAGA PORTAL (S20) */}
+      {/* UNIVERSAL CHILL2BUILD PORTAL (S20) */}
       <UniversalPortalModal
         isOpen={isPortalModalOpen}
         onClose={() => setIsPortalModalOpen(false)}

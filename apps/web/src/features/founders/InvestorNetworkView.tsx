@@ -221,7 +221,7 @@ export const InvestorNetworkView: React.FC<InvestorNetworkViewProps> = () => {
           details: reportDetails,
         }),
       });
-      setActionSuccessMessage("Report submitted to moderation. Thank you for keeping Balaga safe.");
+      setActionSuccessMessage("Report submitted to moderation. Thank you for keeping Chill2Build safe.");
       setReportInvestorId(null);
       setReportDetails("");
       setTimeout(() => setActionSuccessMessage(null), 4000);
@@ -345,7 +345,7 @@ export const InvestorNetworkView: React.FC<InvestorNetworkViewProps> = () => {
             Professional Discovery and Networking Platform Notice
           </p>
           <p className="text-slate-400 leading-relaxed">
-            Balaga is a professional networking and matchmaking venue for startup founders and investors. Balaga does not operate as a registered broker-dealer, investment advisor, or crowdfunding portal. No securities transactions, capital pooling, or escrow are operated on Balaga. Unverified profiles are self-declared.
+            Chill2Build is a professional networking and matchmaking venue for startup founders and investors. Chill2Build does not operate as a registered broker-dealer, investment advisor, or crowdfunding portal. No securities transactions, capital pooling, or escrow are operated on Chill2Build. Unverified profiles are self-declared.
           </p>
         </div>
       </div>
@@ -1306,7 +1306,7 @@ export const InvestorNetworkView: React.FC<InvestorNetworkViewProps> = () => {
                     headers: { "Content-Type": "application/json", "x-platform-world": "founders" },
                     body: JSON.stringify({
                       evidenceType: formData.get("evidenceType") || "identity_proof",
-                      documentUrls: ["https://balaga.online/docs/verification_sample.pdf"],
+                      documentUrls: ["https://chill2build.online/docs/verification_sample.pdf"],
                       officialEntityName: formData.get("officialEntityName") || undefined,
                       registrationNumber: formData.get("registrationNumber") || undefined,
                       notes: formData.get("notes") || undefined,

@@ -234,7 +234,7 @@ export const RapidHuddleModal: React.FC<RapidHuddleModalProps> = ({
           )}
 
           <div className="text-[10px] text-slate-500 text-center pt-1 border-t border-slate-800">
-            Balaga Zero-Fatigue Guarantee: Voice calls strictly terminate at 10 minutes.
+            Chill2Build Zero-Fatigue Guarantee: Voice calls strictly terminate at 10 minutes.
           </div>
         </div>
       </div>

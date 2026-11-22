@@ -411,7 +411,7 @@ export const FoundersDashboard: React.FC<FoundersDashboardProps> = ({ onNavigate
       setNewProdName("");
       setNewProdTagline("");
       setNewProdDesc("");
-      showToast("Product launched on Balaga Launchpad!");
+      showToast("Product launched on Chill2Build Launchpad!");
       fetchDashboardData();
     } catch (err: any) {
       showToast(undefined, err.message);

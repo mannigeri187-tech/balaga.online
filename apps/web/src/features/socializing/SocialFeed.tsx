@@ -708,7 +708,7 @@ export const SocialFeed: React.FC<SocialFeedProps> = ({ initialTab = "for_you" }
     setTimeout(() => setShareToast(null), 2500);
   };
 
-  // Toggle 3D Balaga Card Flip (Social ↔ Builder)
+  // Toggle 3D Chill2Build Card Flip (Social ↔ Builder)
   const handleToggleFlip = (postId: string) => {
     setFlippedPostIds((prev) => {
       const next = new Set(prev);
@@ -825,7 +825,7 @@ export const SocialFeed: React.FC<SocialFeedProps> = ({ initialTab = "for_you" }
         username: postAuthorUsername,
         displayName: fallbackName || postAuthorUsername,
         avatarUrl: undefined,
-        bio: "Socializing creator on Balaga ✨",
+        bio: "Socializing creator on Chill2Build ✨",
         followersCount: "142",
         followingCount: 89,
         postsCount: 1,
@@ -1314,7 +1314,7 @@ export const SocialFeed: React.FC<SocialFeedProps> = ({ initialTab = "for_you" }
                   </div>
 
                   <div className="flex items-center gap-2">
-                    {/* 3D Balaga Card Flip Toggle */}
+                    {/* 3D Chill2Build Card Flip Toggle */}
                     <button
                       type="button"
                       onClick={() => handleToggleFlip(post.id)}
@@ -1707,7 +1707,7 @@ export const SocialFeed: React.FC<SocialFeedProps> = ({ initialTab = "for_you" }
                       ⚡ 0% Platform Fee · Direct Creator Fuel
                     </p>
                     <p>
-                      Balaga does not process, hold, or escrow your funds. Tapping an amount opens your UPI app (GPay, PhonePe, Paytm, BHIM) where you authorize the payment directly into the creator&apos;s bank account.
+                      Chill2Build does not process, hold, or escrow your funds. Tapping an amount opens your UPI app (GPay, PhonePe, Paytm, BHIM) where you authorize the payment directly into the creator&apos;s bank account.
                     </p>
                   </div>
                 </div>
@@ -2189,7 +2189,7 @@ export const SocialFeed: React.FC<SocialFeedProps> = ({ initialTab = "for_you" }
         onClose={() => setIsTwinModalOpen(false)}
       />
 
-      {/* BALAGA SOCIAL INTELLIGENCE ASSISTANT (MILESTONE 2) */}
+      {/* CHILL2BUILD SOCIAL INTELLIGENCE ASSISTANT (MILESTONE 2) */}
       <IntelligenceControlModal
         isOpen={isAiModalOpen}
         onClose={() => setIsAiModalOpen(false)}

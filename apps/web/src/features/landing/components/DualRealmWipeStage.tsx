@@ -267,7 +267,7 @@ export const DualRealmWipeStage: React.FC<DualRealmWipeStageProps> = ({
                 <span className="font-mono text-[10px] text-cyan-400">+48.2% CTR</span>
               </div>
               <div className="p-2 rounded-xl bg-[#060a08] border border-white/5 space-y-1 font-mono text-[10px]">
-                <div className="text-emerald-300 font-bold">balaga.link/p/neural</div>
+                <div className="text-emerald-300 font-bold">chill2build.link/p/neural</div>
                 <div className="text-white">1,842 Demo Visitors Verified</div>
               </div>
               <p className="text-[11px] text-[#8c887e]">

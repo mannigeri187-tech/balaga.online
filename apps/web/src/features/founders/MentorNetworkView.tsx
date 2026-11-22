@@ -161,7 +161,7 @@ export const MentorNetworkView: React.FC<MentorNetworkViewProps> = () => {
   const [sessTime, setSessTime] = useState<string>("10:00");
   const [sessDuration, setSessDuration] = useState<number>(45);
   const [sessFormat, setSessFormat] = useState<"online" | "in_person" | "hybrid">("online");
-  const [sessMeetingLink, setSessMeetingLink] = useState<string>("https://meet.balaga.online/session-link");
+  const [sessMeetingLink, setSessMeetingLink] = useState<string>("https://meet.chill2build.online/session-link");
   const [sessAgenda, setSessAgenda] = useState<string>("");
 
   // Workspace sub-items state
@@ -937,7 +937,7 @@ export const MentorNetworkView: React.FC<MentorNetworkViewProps> = () => {
           <div className="space-y-2 max-w-2xl">
             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold uppercase tracking-wider">
               <Compass className="w-3.5 h-3.5 mr-1" />
-              Balaga Founders · Feature 10
+              Chill2Build Founders · Feature 10
             </div>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
               Mentor Network
@@ -2273,8 +2273,8 @@ export const MentorNetworkView: React.FC<MentorNetworkViewProps> = () => {
 
             {/* Regulatory Disclaimer */}
             <div className="p-3 bg-amber-500/10 border border-amber-500/20 rounded-xl text-[11px] text-amber-300/90 leading-relaxed">
-              <span className="font-bold">Balaga Regulatory Notice:</span> Balaga records reported pricing and payment
-              terms for mutual accountability. Balaga does not operate an internal wallet or escrow, and does not hold
+              <span className="font-bold">Chill2Build Regulatory Notice:</span> Chill2Build records reported pricing and payment
+              terms for mutual accountability. Chill2Build does not operate an internal wallet or escrow, and does not hold
               or guarantee payments.
             </div>
 
@@ -2683,7 +2683,7 @@ export const MentorNetworkView: React.FC<MentorNetworkViewProps> = () => {
               <div className="space-y-4">
                 <div className="p-3 bg-amber-500/10 border border-amber-500/20 rounded-xl text-xs text-amber-300">
                   <span className="font-bold">Regulatory Notice: </span>
-                  Balaga records payment status for accounting history and transparency. Balaga does not operate an
+                  Chill2Build records payment status for accounting history and transparency. Chill2Build does not operate an
                   internal wallet or escrow, and does not hold or guarantee funds.
                 </div>
 

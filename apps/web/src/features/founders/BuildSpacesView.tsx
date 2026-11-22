@@ -432,7 +432,7 @@ export const BuildSpacesView: React.FC<BuildSpacesViewProps> = ({ onNavigateTab:
         body: JSON.stringify({
           name: documentForm.name,
           folder: documentForm.folder,
-          fileUrl: documentForm.fileUrl || "https://balaga.online/documents/spec.pdf",
+          fileUrl: documentForm.fileUrl || "https://chill2build.online/documents/spec.pdf",
           description: documentForm.description,
         }),
       });
@@ -1064,7 +1064,7 @@ export const BuildSpacesView: React.FC<BuildSpacesViewProps> = ({ onNavigateTab:
               </h3>
               <p className="text-xs text-slate-300 leading-relaxed">
                 {currentSpace.visibility === "private"
-                  ? "Changing to Public allows other Balaga Founders members to discover your project outline and submit requests to join. Internal tasks, chats, documents, and meetings will remain strictly private to approved members."
+                  ? "Changing to Public allows other Chill2Build Founders members to discover your project outline and submit requests to join. Internal tasks, chats, documents, and meetings will remain strictly private to approved members."
                   : "Changing to Private will immediately remove this project from public project discovery. Only currently approved members will continue to have access."}
               </p>
               <div className="flex justify-end gap-2 pt-2">
@@ -1328,7 +1328,7 @@ export const BuildSpacesView: React.FC<BuildSpacesViewProps> = ({ onNavigateTab:
                   type="text"
                   value={documentForm.fileUrl}
                   onChange={(e) => setDocumentForm({ ...documentForm, fileUrl: e.target.value })}
-                  placeholder="https://balaga.online/docs/spec.pdf"
+                  placeholder="https://chill2build.online/docs/spec.pdf"
                   className="w-full bg-slate-950 border border-slate-800 rounded-lg p-2.5 text-xs text-white"
                 />
               </div>
@@ -1429,11 +1429,11 @@ export const BuildSpacesView: React.FC<BuildSpacesViewProps> = ({ onNavigateTab:
           <div className="relative z-10">
             <div className="flex items-center gap-2 mb-2">
               <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-emerald-950 text-emerald-400 border border-emerald-800/60 uppercase tracking-wider">
-                Feature 12 • Balaga Founders
+                Feature 12 • Chill2Build Founders
               </span>
               <span className="text-xs text-slate-400 font-mono">Option C: Private & Public Spaces</span>
             </div>
-            <h1 className="text-2xl font-bold text-white tracking-tight">Balaga Build Spaces</h1>
+            <h1 className="text-2xl font-bold text-white tracking-tight">Chill2Build Build Spaces</h1>
             <p className="text-xs text-slate-300 max-w-2xl mt-1 leading-relaxed">
               Unified private collaboration and project management system for founders, cofounders, and startup partnerships. Organize tasks, milestones, discussions, and docs with zero external noise.
             </p>

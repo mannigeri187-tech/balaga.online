@@ -579,8 +579,8 @@ export const ReferralExchangeView: React.FC<ReferralExchangeViewProps> = ({ onNa
         <div className="mt-5 pt-4 border-t border-slate-800/80 flex items-start gap-2.5 text-[11px] text-slate-400">
           <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
           <span>
-            <strong>Platform Disclaimer:</strong> Balaga provides an auditable digital pipeline and dual-party confirmation
-            records for referral arrangements. Balaga does not operate an escrow, hold funds, or guarantee payments. All
+            <strong>Platform Disclaimer:</strong> Chill2Build provides an auditable digital pipeline and dual-party confirmation
+            records for referral arrangements. Chill2Build does not operate an escrow, hold funds, or guarantee payments. All
             financial settlements occur directly between participating parties.
           </span>
         </div>
@@ -1870,7 +1870,7 @@ export const ReferralExchangeView: React.FC<ReferralExchangeViewProps> = ({ onNa
               </div>
 
               <div className="text-[10px] text-slate-500 border-t border-slate-800/80 pt-2">
-                <strong>Disclaimer:</strong> Balaga does not operate escrow or hold funds. Payments occur directly between parties.
+                <strong>Disclaimer:</strong> Chill2Build does not operate escrow or hold funds. Payments occur directly between parties.
               </div>
             </form>
           </div>

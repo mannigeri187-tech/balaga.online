@@ -1538,7 +1538,7 @@ export const OpportunitiesMarketplaceView: React.FC<OpportunitiesMarketplaceView
             <div className="space-y-1">
               <h3 className="text-lg font-bold text-white">Connection Required to Message</h3>
               <p className="text-xs text-slate-300 leading-relaxed">
-                As per Balaga Founders messaging rules, Basic members must have an accepted professional connection before initiating private messages, or you can upgrade to Founders Premium for instant unconnected messaging.
+                As per Chill2Build Founders messaging rules, Basic members must have an accepted professional connection before initiating private messages, or you can upgrade to Founders Premium for instant unconnected messaging.
               </p>
             </div>
 
@@ -1574,7 +1574,7 @@ export const OpportunitiesMarketplaceView: React.FC<OpportunitiesMarketplaceView
           >
             <h3 className="text-base font-bold text-white">Report Opportunity</h3>
             <p className="text-xs text-slate-400">
-              Help keep Balaga Founders trusted and scam-free.
+              Help keep Chill2Build Founders trusted and scam-free.
             </p>
 
             <div className="space-y-3 text-xs">

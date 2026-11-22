@@ -54,8 +54,11 @@ export const Header: React.FC<HeaderProps> = ({ onNavigateTab }) => {
 
   return (
     <header className="h-16 border-b border-slate-800 bg-slate-950/90 backdrop-blur-md px-4 sm:px-6 flex items-center justify-between sticky top-0 z-40 select-none">
-      {/* TOP-LEFT CORNER: Persistent Section Switcher */}
+      {/* TOP-LEFT CORNER: Logo + Persistent Section Switcher */}
       <div className="flex items-center gap-3">
+        <a href="/" className="flex items-center gap-2 group transition-transform active:scale-95" title="Chill2Build">
+          <img src="/icon.svg" alt="Chill2Build Logo" className="w-8 h-8 rounded-xl shadow-md group-hover:scale-105 transition-transform" />
+        </a>
         <WorldSwitcher />
       </div>
 

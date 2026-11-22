@@ -164,7 +164,7 @@ export const PremiumCentreView: React.FC = () => {
         <div className="max-w-2xl space-y-4 relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-300 border border-amber-500/30">
             <GoldPremiumCrown size={16} />
-            <span>Balaga Professional Membership</span>
+            <span>Chill2Build Professional Membership</span>
           </div>
 
           <h1 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight flex items-center gap-3">

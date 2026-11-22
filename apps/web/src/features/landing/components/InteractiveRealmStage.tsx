@@ -296,7 +296,7 @@ export const InteractiveRealmStage: React.FC<InteractiveRealmStageProps> = ({
                 <div className="p-2.5 rounded-xl bg-[#090a0f] border border-white/5 space-y-1 font-mono text-[10px]">
                   <div className="flex justify-between text-[#8c887e]">
                     <span>Short-Link:</span>
-                    <span className="text-emerald-300 font-bold">balaga.link/p/neural</span>
+                    <span className="text-emerald-300 font-bold">chill2build.link/p/neural</span>
                   </div>
                   <div className="flex justify-between text-[#8c887e]">
                     <span>Unique Clicks:</span>

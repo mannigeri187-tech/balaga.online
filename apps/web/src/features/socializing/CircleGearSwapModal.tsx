@@ -385,7 +385,7 @@ export const CircleGearSwapModal: React.FC<CircleGearSwapModalProps> = ({
           )}
 
           <div className="pt-2 border-t border-slate-800 text-[10px] text-slate-500 text-center">
-            🔒 Safe Peer Exchange: Protected by Balaga Trust Fingerprint. Zero commercial fees.
+            🔒 Safe Peer Exchange: Protected by Chill2Build Trust Fingerprint. Zero commercial fees.
           </div>
         </div>
       </div>

@@ -50,7 +50,7 @@ export const DataExportModal: React.FC<DataExportModalProps> = ({
 
       const archiveData = {
         meta: {
-          platform: "balaga.online",
+          platform: "chill2build.online",
           version: "1.0-sovereign",
           exportTimestamp: new Date().toISOString(),
           compliance: "Digital Personal Data Protection (DPDP) & Self-Sovereign Identity",
@@ -126,7 +126,7 @@ export const DataExportModal: React.FC<DataExportModalProps> = ({
             <ShieldCheck className="w-5 h-5 text-teal-400 shrink-0 mt-0.5" />
             <div>
               <span className="font-semibold text-teal-100">Your Data Belongs to You: </span>
-              Balaga enforces strict sovereign portability. You can export 100% of your posts, life chapters, living collections, and trust records at any moment with zero fee.
+              Chill2Build enforces strict sovereign portability. You can export 100% of your posts, life chapters, living collections, and trust records at any moment with zero fee.
             </div>
           </div>
 

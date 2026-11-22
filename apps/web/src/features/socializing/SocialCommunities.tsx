@@ -365,7 +365,7 @@ export const SocialCommunities: React.FC = () => {
         <div className="space-y-1">
           <div className="flex items-center gap-2">
             <Users className="w-5 h-5 text-violet-400" />
-            <h2 className="text-lg font-bold text-slate-100">Balaga Circles</h2>
+            <h2 className="text-lg font-bold text-slate-100">Chill2Build Circles</h2>
             <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-violet-500/10 text-violet-300 border border-violet-500/30">
               Interest-First
             </span>
@@ -894,21 +894,21 @@ export const SocialCommunities: React.FC = () => {
       <CircleSplitModal
         isOpen={isSplitModalOpen}
         onClose={() => setIsSplitModalOpen(false)}
-        circleName={selectedCommunity?.name || "Balaga Circles"}
+        circleName={selectedCommunity?.name || "Chill2Build Circles"}
       />
 
       {/* 10-MINUTE RAPID HUDDLE MODAL (S23) */}
       <RapidHuddleModal
         isOpen={isHuddleOpen}
         onClose={() => setIsHuddleOpen(false)}
-        circleName={selectedCommunity?.name || "Balaga Circles"}
+        circleName={selectedCommunity?.name || "Chill2Build Circles"}
       />
 
       {/* CIRCLE GEAR SWAP MODAL (S19) */}
       <CircleGearSwapModal
         isOpen={isGearSwapOpen}
         onClose={() => setIsGearSwapOpen(false)}
-        circleName={selectedCommunity?.name || "Balaga Circles"}
+        circleName={selectedCommunity?.name || "Chill2Build Circles"}
       />
 
       {/* CAMPUS NETWORK & SOCIETY HUB (S13) */}

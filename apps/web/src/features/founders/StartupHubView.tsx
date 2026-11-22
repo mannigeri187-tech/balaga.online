@@ -823,7 +823,7 @@ export const StartupHubView: React.FC<StartupHubViewProps> = ({ onNavigateTab })
                       </p>
                     )}
                     <p className="text-xs text-slate-400">
-                      Under Balaga Founders Option A, ownership transitions only upon your explicit acceptance. The former owner will become an authorized {req.previousOwnerResultingRole}.
+                      Under Chill2Build Founders Option A, ownership transitions only upon your explicit acceptance. The former owner will become an authorized {req.previousOwnerResultingRole}.
                     </p>
                   </div>
 
@@ -1471,7 +1471,7 @@ export const StartupHubView: React.FC<StartupHubViewProps> = ({ onNavigateTab })
               <div>
                 <h3 className="text-lg font-bold text-white">Register Startup Profile</h3>
                 <p className="text-xs text-slate-400 mt-0.5">
-                  Launch your venture profile on Balaga Founders. You will automatically become the official Owner.
+                  Launch your venture profile on Chill2Build Founders. You will automatically become the official Owner.
                 </p>
               </div>
               <button

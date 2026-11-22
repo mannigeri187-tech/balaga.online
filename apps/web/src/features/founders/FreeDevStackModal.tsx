@@ -191,7 +191,7 @@ export const FreeDevStackModal: React.FC<FreeDevStackModalProps> = ({
 
   // Live UPI Generator state
   const [upiVpa, setUpiVpa] = useState("aarav@okhdfcbank");
-  const [upiPayeeName, setUpiPayeeName] = useState("Balaga Innovator");
+  const [upiPayeeName, setUpiPayeeName] = useState("Chill2Build Innovator");
   const [upiAmount, setUpiAmount] = useState("499");
   const [upiNote, setUpiNote] = useState("Startup MVP Pre-Order");
 
@@ -370,24 +370,24 @@ export const FreeDevStackModal: React.FC<FreeDevStackModalProps> = ({
                   <span>How to Get a Free Domain for Your Startup</span>
                 </div>
                 <p className="text-xs text-slate-300 leading-relaxed">
-                  You do not need to buy an expensive domain to launch your MVP. Balaga provides free instant subdomains with automated SSL, and platforms like GitHub provide free student domains.
+                  You do not need to buy an expensive domain to launch your MVP. Chill2Build provides free instant subdomains with automated SSL, and platforms like GitHub provide free student domains.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {/* Option 1: Balaga Free Subdomain */}
+                {/* Option 1: Chill2Build Free Subdomain */}
                 <div className="p-4 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-3 flex flex-col justify-between">
                   <div className="space-y-2">
                     <div className="flex items-center justify-between">
                       <span className="text-xs font-bold text-white flex items-center gap-1.5">
-                        <span>Option 1: Instant Balaga Subdomain</span>
+                        <span>Option 1: Instant Chill2Build Subdomain</span>
                       </span>
                       <span className="text-[10px] font-bold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/30">
                         100% FREE FOREVER
                       </span>
                     </div>
                     <p className="text-xs text-slate-400 leading-relaxed">
-                      Claim <strong className="text-slate-200">yourstartup.balaga.online</strong> directly inside the platform. Includes automated wildcard SSL, Cloudflare global edge caching, and DNS verification in under 30 seconds.
+                      Claim <strong className="text-slate-200">yourstartup.chill2build.online</strong> directly inside the platform. Includes automated wildcard SSL, Cloudflare global edge caching, and DNS verification in under 30 seconds.
                     </p>
                   </div>
 
@@ -608,7 +608,7 @@ export const FreeDevStackModal: React.FC<FreeDevStackModalProps> = ({
                   onClick={() =>
                     handleCopy(
                       `# ==============================================================================
-# BALAGA ₹0 PRODUCTION STARTUP STACK CONFIGURATION
+# CHILL2BUILD ₹0 PRODUCTION STARTUP STACK CONFIGURATION
 # All services below have verified generous free tiers (Free-For-Dev Standard)
 # ==============================================================================
 
@@ -623,7 +623,7 @@ GROQ_MODEL=llama-3.3-70b-versatile
 
 # 3. TRANSACTIONAL EMAIL (Resend - 3,000 emails/month free)
 RESEND_API_KEY=re_123456789_abcdef
-EMAIL_FROM=founder@yourstartup.balaga.online
+EMAIL_FROM=founder@yourstartup.chill2build.online
 
 # 4. STORAGE & CDN (Cloudflare R2 - 10GB Zero-Egress Free)
 R2_ACCOUNT_ID=your_cloudflare_account_id
@@ -638,7 +638,7 @@ UPI_PAYEE_NAME=YourStartupInnovations
 # 6. APPLICATION CONFIG
 PORT=3000
 NODE_ENV=production
-FRONTEND_URL=https://yourstartup.balaga.online
+FRONTEND_URL=https://yourstartup.chill2build.online
 `,
                       "master_env"
                     )
@@ -662,7 +662,7 @@ GROQ_MODEL=llama-3.3-70b-versatile
 
 # 3. TRANSACTIONAL EMAIL (Resend - 3,000 emails/month free)
 RESEND_API_KEY=re_123456789_abcdef
-EMAIL_FROM=founder@yourstartup.balaga.online
+EMAIL_FROM=founder@yourstartup.chill2build.online
 
 # 4. STORAGE & CDN (Cloudflare R2 - 10GB Zero-Egress Free)
 R2_ACCOUNT_ID=your_cloudflare_account_id
@@ -677,7 +677,7 @@ UPI_PAYEE_NAME=YourStartupInnovations
 # 6. APPLICATION CONFIG
 PORT=3000
 NODE_ENV=production
-FRONTEND_URL=https://yourstartup.balaga.online`}
+FRONTEND_URL=https://yourstartup.chill2build.online`}
               </pre>
             </div>
           )}

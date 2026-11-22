@@ -129,7 +129,7 @@ export const CustomSubdomainModal: React.FC<CustomSubdomainModalProps> = ({
                 </span>
               </div>
               <p className="text-xs text-slate-400 mt-0.5">
-                Instant high-performance branded domains (*.balaga.online) with zero-config edge routing
+                Instant high-performance branded domains (*.chill2build.online) with zero-config edge routing
               </p>
             </div>
           </div>
@@ -161,7 +161,7 @@ export const CustomSubdomainModal: React.FC<CustomSubdomainModalProps> = ({
                   className="w-full pl-10 pr-32 py-2.5 bg-slate-950 border border-slate-700 rounded-lg text-sm text-white placeholder-slate-500 focus:outline-none focus:border-amber-500 transition font-mono"
                 />
                 <span className="absolute inset-y-0 right-0 pr-3 flex items-center text-xs text-slate-400 pointer-events-none font-mono">
-                  .balaga.online
+                  .chill2build.online
                 </span>
               </div>
               <Button
@@ -188,14 +188,14 @@ export const CustomSubdomainModal: React.FC<CustomSubdomainModalProps> = ({
                 ) : isAvailable ? (
                   <span className="text-emerald-400 flex items-center gap-1.5 font-medium">
                     <CheckCircle className="w-3.5 h-3.5" />
-                    <span className="font-mono">{sanitizedQuery}.balaga.online</span> is available for instant setup!
+                    <span className="font-mono">{sanitizedQuery}.chill2build.online</span> is available for instant setup!
                   </span>
                 ) : (
                   <span className="text-rose-400 flex items-center gap-1.5">
                     <X className="w-3.5 h-3.5" /> Subdomain already claimed by another founder team.
                   </span>
                 )}
-                <span className="text-slate-400">CNAME target: <code className="text-amber-300 font-mono">cname.balaga.online</code></span>
+                <span className="text-slate-400">CNAME target: <code className="text-amber-300 font-mono">cname.chill2build.online</code></span>
               </div>
             )}
 
@@ -204,15 +204,15 @@ export const CustomSubdomainModal: React.FC<CustomSubdomainModalProps> = ({
                 <div className="flex items-center gap-2">
                   <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0" />
                   <span>
-                    Successfully claimed <strong>{newSubdomainSuccess}.balaga.online</strong> with active SSL!
+                    Successfully claimed <strong>{newSubdomainSuccess}.chill2build.online</strong> with active SSL!
                   </span>
                 </div>
                 <button
-                  onClick={() => handleCopy(`https://${newSubdomainSuccess}.balaga.online`)}
+                  onClick={() => handleCopy(`https://${newSubdomainSuccess}.chill2build.online`)}
                   className="px-2.5 py-1 bg-emerald-800/60 hover:bg-emerald-700 text-white rounded font-mono text-[11px] flex items-center gap-1 transition"
                 >
                   <Copy className="w-3 h-3" />
-                  {copiedUrl === `https://${newSubdomainSuccess}.balaga.online` ? "Copied" : "Copy Link"}
+                  {copiedUrl === `https://${newSubdomainSuccess}.chill2build.online` ? "Copied" : "Copy Link"}
                 </button>
               </div>
             )}
@@ -251,7 +251,7 @@ export const CustomSubdomainModal: React.FC<CustomSubdomainModalProps> = ({
               <div>
                 <h4 className="text-xs font-semibold text-slate-200">Direct Build Space Bind</h4>
                 <p className="text-[11px] text-slate-400 mt-0.5 leading-relaxed">
-                  Links seamlessly to Balaga Build Spaces, GitHub repo webhooks, and pitch room decks.
+                  Links seamlessly to Chill2Build Build Spaces, GitHub repo webhooks, and pitch room decks.
                 </p>
               </div>
             </div>
@@ -270,7 +270,7 @@ export const CustomSubdomainModal: React.FC<CustomSubdomainModalProps> = ({
 
             <div className="space-y-3">
               {claimedList.map((rec) => {
-                const fullUrl = `https://${rec.subdomain}.balaga.online`;
+                const fullUrl = `https://${rec.subdomain}.chill2build.online`;
                 return (
                   <div
                     key={rec.subdomain}
@@ -283,7 +283,7 @@ export const CustomSubdomainModal: React.FC<CustomSubdomainModalProps> = ({
                       <div>
                         <div className="flex items-center gap-2 flex-wrap">
                           <span className="font-mono font-semibold text-amber-300 text-sm">
-                            {rec.subdomain}.balaga.online
+                            {rec.subdomain}.chill2build.online
                           </span>
                           <span className="px-2 py-0.5 rounded text-[10px] bg-slate-700/60 text-slate-300 font-medium">
                             {rec.stage}
@@ -334,7 +334,7 @@ export const CustomSubdomainModal: React.FC<CustomSubdomainModalProps> = ({
 
         {/* Modal Footer */}
         <div className="flex items-center justify-between px-6 py-4 border-t border-slate-800 bg-slate-900/90 text-xs text-slate-400">
-          <span>Protected under Balaga Zero-Custody Edge Proxy Architecture</span>
+          <span>Protected under Chill2Build Zero-Custody Edge Proxy Architecture</span>
           <Button variant="outline" onClick={onClose} className="border-slate-700 text-slate-300">
             Close Panel
           </Button>

@@ -476,7 +476,7 @@ export const CircleSplitModal: React.FC<CircleSplitModalProps> = ({
                       <button
                         onClick={() => {
                           navigator.clipboard.writeText(
-                            `Balaga Split: ${split.title} (₹${split.totalAmount}). Pay ${split.paidBy} via UPI: ${split.paidByUpi}`
+                            `Chill2Build Split: ${split.title} (₹${split.totalAmount}). Pay ${split.paidBy} via UPI: ${split.paidByUpi}`
                           );
                           alert("Split summary copied to clipboard for sharing!");
                         }}

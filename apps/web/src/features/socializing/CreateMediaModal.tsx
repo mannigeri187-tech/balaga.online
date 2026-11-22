@@ -61,7 +61,7 @@ export const CreateMediaModal: React.FC<CreateMediaModalProps> = ({
       authorDisplayName: socialProfile?.displayName || "Aarav Social",
       authorUsername: socialProfile?.username || "aarav_social",
       authorAvatarUrl: socialProfile?.avatarUrl || "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&q=80",
-      content: caption.trim() || (mode === "post" ? "Sharing a special moment on Balaga ✨" : "New Reel rollout! 🎬"),
+      content: caption.trim() || (mode === "post" ? "Sharing a special moment on Chill2Build ✨" : "New Reel rollout! 🎬"),
       mediaUrls: mediaUrl ? [mediaUrl] : ["https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80"],
       mediaType: mode === "reel" ? "video" : "image",
       likesCount: 0,
@@ -186,7 +186,7 @@ export const CreateMediaModal: React.FC<CreateMediaModalProps> = ({
                   Drag {mode === "post" ? "photos" : "videos or photos"} here
                 </h3>
                 <p className="text-xs text-slate-400 max-w-xs">
-                  Upload from your computer or photos folder to share with friends on Balaga
+                  Upload from your computer or photos folder to share with friends on Chill2Build
                 </p>
               </div>
 
@@ -281,7 +281,7 @@ export const CreateMediaModal: React.FC<CreateMediaModalProps> = ({
                   <textarea
                     value={caption}
                     onChange={(e) => setCaption(e.target.value)}
-                    placeholder="Write a caption... e.g. Weekend filter coffee vibes ☕ #Bengaluru #Balaga"
+                    placeholder="Write a caption... e.g. Weekend filter coffee vibes ☕ #Bengaluru #Chill2Build"
                     rows={4}
                     className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-slate-100 placeholder-slate-500 focus:outline-none focus:border-violet-500 transition-colors resize-none"
                     autoFocus
@@ -328,7 +328,7 @@ export const CreateMediaModal: React.FC<CreateMediaModalProps> = ({
                     disabled={isSubmitting}
                     className="w-full bg-violet-600 hover:bg-violet-500 text-white font-bold text-xs py-2.5 rounded-xl shadow-lg shadow-violet-900/30"
                   >
-                    {isSubmitting ? "Sharing to Balaga..." : `Share ${mode === "post" ? "Post" : "Reel"}`}
+                    {isSubmitting ? "Sharing to Chill2Build..." : `Share ${mode === "post" ? "Post" : "Reel"}`}
                   </Button>
                 </div>
               </div>

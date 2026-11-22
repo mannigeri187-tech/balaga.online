@@ -77,7 +77,7 @@ export const GuardianSafeJourneyModal: React.FC<GuardianSafeJourneyModalProps> =
   };
 
   const triggerSOS = () => {
-    const alertMsg = `🚨 EMERGENCY ALERT from Aarav on Balaga Guardian Beacon!\nLocation: Heading to ${destination}.\nETA expired or assistance needed. Please call or check immediately!`;
+    const alertMsg = `🚨 EMERGENCY ALERT from Aarav on Chill2Build Guardian Beacon!\nLocation: Heading to ${destination}.\nETA expired or assistance needed. Please call or check immediately!`;
     navigator.clipboard?.writeText(alertMsg);
     alert(
       "EMERGENCY DISTRESS BEACON ACTIVATED!\n\nAlert copied to clipboard and high-priority push notification dispatched to your selected guardians (Priya Rao, Kabir Mehta)."

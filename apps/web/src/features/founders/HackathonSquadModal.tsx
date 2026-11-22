@@ -159,7 +159,7 @@ export const HackathonSquadModal: React.FC<HackathonSquadModalProps> = ({
             <ShieldCheck className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
             <div>
               <span className="font-semibold text-slate-100">No Flaky Teammates: </span>
-              Every applicant's role suitability is attested by their verified codebase commits and past hackathon project submissions on Balaga. Zero last-minute dropouts.
+              Every applicant's role suitability is attested by their verified codebase commits and past hackathon project submissions on Chill2Build. Zero last-minute dropouts.
             </div>
           </div>
 

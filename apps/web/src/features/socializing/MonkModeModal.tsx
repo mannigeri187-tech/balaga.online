@@ -163,7 +163,7 @@ export const MonkModeModal: React.FC<MonkModeModalProps> = ({
           )}
 
           <div className="text-[10px] text-slate-500 text-center pt-1 border-t border-slate-800">
-            Balaga Digital Well-Being Guarantee • Zero algorithmic guilt
+            Chill2Build Digital Well-Being Guarantee • Zero algorithmic guilt
           </div>
         </div>
       </div>

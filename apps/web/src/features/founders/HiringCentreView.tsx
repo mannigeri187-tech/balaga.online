@@ -1855,7 +1855,7 @@ export const HiringCentreView: React.FC<HiringCentreViewProps> = () => {
               Report Job: {reportModalJob.title}
             </h3>
             <p className="text-slate-400">
-              Help maintain trust & safety in the Balaga Founders network. Fraudulent, scam, or
+              Help maintain trust & safety in the Chill2Build Founders network. Fraudulent, scam, or
               misleading job listings are strictly investigated.
             </p>
 

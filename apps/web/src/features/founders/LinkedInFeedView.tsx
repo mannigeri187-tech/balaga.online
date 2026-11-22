@@ -1160,7 +1160,7 @@ export const LinkedInFeedView: React.FC<LinkedInFeedViewProps> = ({ onNavigateTa
                   ? "You haven't bookmarked any posts yet. Click the bookmark icon on any post to save it for quick reference."
                   : activeTab === "following"
                   ? "You are not following any founders with posts in this topic. Explore Suggested Founders on the right!"
-                  : "Be the first to share an architectural milestone, product launch, or discussion with the Balaga Founders community."}
+                  : "Be the first to share an architectural milestone, product launch, or discussion with the Chill2Build Founders community."}
               </p>
               <button
                 onClick={() => setIsComposerOpen(true)}

@@ -1,6 +1,6 @@
 /**
  * ==============================================================================
- * BALAGA BHASHA TRANSLATION & CULTURAL NUANCE ENGINE (INDICTRANS2 SPECIFICATION)
+ * CHILL2BUILD BHASHA TRANSLATION & CULTURAL NUANCE ENGINE (INDICTRANS2 SPECIFICATION)
  * Architecture based on AI4Bharat IndicTrans2 & National Language Translation Mission
  * Covers 10+ Scheduled Indian Languages with Unicode Script Auto-Detection & Cultural Vernacular Glossary
  * ==============================================================================

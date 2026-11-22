@@ -338,7 +338,7 @@ export const WorldLayout: React.FC<WorldLayoutProps> = ({ onNavigateToLanding })
         onNavigateTab={handleTabChange}
       />
 
-      {/* Balaga Intelligence Control Centre (Milestone 1) */}
+      {/* Chill2Build Intelligence Control Centre (Milestone 1) */}
       <IntelligenceControlModal
         isOpen={isIntelligenceModalOpen}
         onClose={() => setIsIntelligenceModalOpen(false)}

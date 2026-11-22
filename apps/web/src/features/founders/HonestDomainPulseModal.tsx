@@ -378,7 +378,7 @@ export const HonestDomainPulseModal: React.FC<HonestDomainPulseModalProps> = ({
 
               <div className="flex items-center justify-between">
                 <span className="text-[11px] text-slate-400">
-                  Protected under Balaga Zero-Retaliation Domain Shield.
+                  Protected under Chill2Build Zero-Retaliation Domain Shield.
                 </span>
                 <Button
                   variant="primary"

@@ -265,7 +265,7 @@ export const MicroAppsContainerModal: React.FC<MicroAppsContainerModalProps> = (
                 </span>
               </div>
               <p className="text-xs text-slate-400 mt-0.5">
-                Playable HTML5/WebAudio mini-apps embedded safely inside Balaga feed containers
+                Playable HTML5/WebAudio mini-apps embedded safely inside Chill2Build feed containers
               </p>
             </div>
           </div>

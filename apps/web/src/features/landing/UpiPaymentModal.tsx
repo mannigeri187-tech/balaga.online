@@ -47,7 +47,7 @@ export const UpiPaymentModal: React.FC<UpiPaymentModalProps> = ({
   onPaymentSuccess,
 }) => {
   const [selectedPlan, setSelectedPlan] = useState(PRESET_PLANS[1]);
-  const [upiId] = useState("balaga@okhdfcbank");
+  const [upiId] = useState("chill2build@okhdfcbank");
   const [isCopied, setIsCopied] = useState(false);
   const [isSimulatedSuccess, setIsSimulatedSuccess] = useState(false);
   const [simulatedTxnId, setSimulatedTxnId] = useState("");
@@ -55,9 +55,9 @@ export const UpiPaymentModal: React.FC<UpiPaymentModalProps> = ({
   if (!isOpen) return null;
 
   const upiUri = `upi://pay?pa=${upiId}&pn=${encodeURIComponent(
-    "Balaga Online"
+    "Chill2Build Online"
   )}&am=${selectedPlan.price}&cu=INR&tn=${encodeURIComponent(
-    `Balaga ${selectedPlan.name}`
+    `Chill2Build ${selectedPlan.name}`
   )}`;
 
   const qrImageUrl = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(

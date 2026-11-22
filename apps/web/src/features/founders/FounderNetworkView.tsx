@@ -982,7 +982,7 @@ export const FounderNetworkView: React.FC<FounderNetworkViewProps> = ({
               <div>
                 <h3 className="text-lg font-bold text-white">My Professional Connections</h3>
                 <p className="text-xs text-slate-400">
-                  {connectionsList.length} accepted connections in the Balaga Founders ecosystem.
+                  {connectionsList.length} accepted connections in the Chill2Build Founders ecosystem.
                 </p>
               </div>
             </div>
@@ -1198,7 +1198,7 @@ export const FounderNetworkView: React.FC<FounderNetworkViewProps> = ({
                     {analyticsData.totalViews} Founders Viewed Your Profile
                   </h3>
                   <p className="text-sm text-slate-300 max-w-md mx-auto leading-relaxed">
-                    {analyticsData.message || "Upgrade to Balaga Founders Premium to see who viewed your profile, unlock detailed visitor timelines, and access reach analytics."}
+                    {analyticsData.message || "Upgrade to Chill2Build Founders Premium to see who viewed your profile, unlock detailed visitor timelines, and access reach analytics."}
                   </p>
                 </div>
 
@@ -1571,7 +1571,7 @@ export const FounderNetworkView: React.FC<FounderNetworkViewProps> = ({
             </div>
 
             <div className="space-y-1.5">
-              <h3 className="text-xl font-bold text-white">Balaga Founders Premium</h3>
+              <h3 className="text-xl font-bold text-white">Chill2Build Founders Premium</h3>
               <p className="text-xs text-slate-300">
                 Unlock direct messaging without connecting first and see exactly who visits your profile.
               </p>

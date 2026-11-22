@@ -229,7 +229,7 @@ export const VerificationCentreView: React.FC = () => {
         <div className="max-w-3xl space-y-3 relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
             <ShieldCheck className="w-4 h-4 text-emerald-400" />
-            <span>Balaga Identity & Credential Assurance</span>
+            <span>Chill2Build Identity & Credential Assurance</span>
           </div>
           <h1 className="text-3xl font-bold tracking-tight">Verification Application Centre</h1>
           <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
@@ -690,7 +690,7 @@ export const VerificationCentreView: React.FC = () => {
               rows={4}
               value={appealNotes}
               onChange={(e) => setAppealNotes(e.target.value)}
-              placeholder="Explain why your application meets Balaga verification standards..."
+              placeholder="Explain why your application meets Chill2Build verification standards..."
               className="w-full p-3 rounded-xl bg-slate-950 border border-slate-800 text-white text-xs focus:border-blue-500 focus:outline-none"
             />
             <div className="flex justify-end gap-3 pt-2">
