@@ -1,7 +1,28 @@
 # robots.txt for https://chill2build.online
+
+# Standard Web Crawlers (Google, DuckDuckGo, etc.)
 User-agent: *
 Allow: /
 Disallow: /api/
+
+# AI Search Engines (ChatGPT Search, OpenAI, Perplexity, Anthropic, Bing)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
 
 # Host & Sitemap
 Host: https://chill2build.online
