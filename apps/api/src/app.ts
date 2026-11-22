@@ -27,9 +27,11 @@ const defaultAllowedOrigins = [
   "http://127.0.0.1:5173",
 ];
 
-const configuredOrigins = process.env.ALLOWED_ORIGINS
+const envOrigins = process.env.ALLOWED_ORIGINS
   ? process.env.ALLOWED_ORIGINS.split(",").map((o) => o.trim()).filter(Boolean)
-  : defaultAllowedOrigins;
+  : [];
+
+const allowedOriginsSet = new Set([...defaultAllowedOrigins, ...envOrigins]);
 
 app.use(
   cors({
@@ -38,10 +40,18 @@ app.use(
       if (!origin) return callback(null, true);
       // In non-production, permit all localhost / dev origins
       if (process.env.NODE_ENV !== "production") return callback(null, true);
-      if (configuredOrigins.includes(origin) || configuredOrigins.includes("*")) {
+      
+      // Allow if explicitly configured, wildcard allowed, or matches Vercel/Chill2Build domains
+      if (
+        allowedOriginsSet.has(origin) ||
+        allowedOriginsSet.has("*") ||
+        origin.endsWith(".vercel.app") ||
+        origin.includes("chill2build.online") ||
+        origin.includes("balaga.online")
+      ) {
         return callback(null, true);
       }
-      return callback(new Error("CORS policy violation: origin not allowed"), false);
+      return callback(null, false);
     },
     credentials: true,
   })
