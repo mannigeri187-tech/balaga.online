@@ -2,9 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
-    <link rel="icon" type="image/png" sizes="192x192" href="/icon.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
     <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/icon-512.png" />
     <link rel="manifest" href="/manifest.webmanifest" />
@@ -27,14 +29,16 @@
     <meta property="og:url" content="https://chill2build.online/" />
     <meta property="og:title" content="Chill2Build | Chill. Connect. Collaborate. Build." />
     <meta property="og:description" content="Sovereign dual-realm platform connecting authentic social communities with a 14-tool startup and founder ecosystem under one identity." />
-    <meta property="og:image" content="/icon.svg" />
+    <meta property="og:image" content="https://chill2build.online/icon-512.png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://chill2build.online/" />
     <meta property="twitter:title" content="Chill2Build | Chill. Connect. Collaborate. Build." />
     <meta property="twitter:description" content="Sovereign dual-realm platform connecting authentic social communities with a 14-tool startup and founder ecosystem under one identity." />
-    <meta property="twitter:image" content="/icon.svg" />
+    <meta property="twitter:image" content="https://chill2build.online/icon-512.png" />
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://chill2build.online/" />
@@ -43,23 +47,44 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebApplication",
-      "name": "Chill2Build",
-      "url": "https://chill2build.online/",
-      "logo": "https://chill2build.online/icon.png",
-      "description": "Sovereign dual-realm platform connecting authentic social communities with a 14-tool startup and founder ecosystem under one identity.",
-      "applicationCategory": "SocialNetworkingApplication, BusinessApplication",
-      "operatingSystem": "All",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "INR"
-      },
-      "author": {
-        "@type": "Organization",
-        "name": "Itwield",
-        "url": "https://chill2build.online"
-      }
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://chill2build.online/#organization",
+          "name": "Chill2Build",
+          "url": "https://chill2build.online/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://chill2build.online/icon-512.png",
+            "width": 512,
+            "height": 512
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://chill2build.online/#website",
+          "url": "https://chill2build.online/",
+          "name": "Chill2Build",
+          "publisher": {
+            "@id": "https://chill2build.online/#organization"
+          }
+        },
+        {
+          "@type": "WebApplication",
+          "name": "Chill2Build",
+          "url": "https://chill2build.online/",
+          "applicationCategory": "SocialNetworkingApplication, BusinessApplication",
+          "operatingSystem": "All",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "INR"
+          },
+          "author": {
+            "@id": "https://chill2build.online/#organization"
+          }
+        }
+      ]
     }
     </script>
 
